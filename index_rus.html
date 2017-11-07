@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LiqBo (Rus)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico"> -->
+  <link rel="stylesheet" type="text/css" href="styles/jquery.formstyler.css">
+  <link rel="stylesheet" type="text/css" href="styles/styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header-top">
+      <div class="container">
+        <div class="header-top__logo">
+          <a class="header-top__logo-link" href="#"><img src="images/logo/logo.png" alt="LiqBo logo"></a>
+        </div>
+        <div class="header-top__wrapper">
+          <div class="header-top__agreement">
+            <p>Принимая участие в этом распределении токенов, Вы соглашаетесь с нашими <a href="#">Условиями</a> и <a href="#">Ограниченной ответственностью</a></p>
+            <form class="header-top__agreement-form" name="header-top__agreement-form" action="#" method="POST">
+              <input type="checkbox" name="agreement-form__checkbox" id="agreement-form__checkbox">
+              <label for="agreement-form__checkbox"></label>
+              <input type="submit" name="agreement-form__submit" value="Согласен!">
+            </form>
+          </div>
+          <div class="header-top__timer">
+            <p>PRE-ICO (ICO)</p>
+            <ul>
+              <li class="header-top__timer-days"><span></span>дни</li>
+              <li class="header-top__timer-hours"><span></span>часы</li>
+              <li class="header-top__timer-minutes"><span></span>минуты</li>
+              <li class="header-top__timer-seconds"><span></span>секунды</li>
+            </ul>
+          </div>
+          <div class="header-top__stay-tuned">
+            <strong>ОСТАВАЙТЕСЬ НА СВЯЗИ</strong>
+            <p><a href="#">Оставьте адрес email</a>, чтобы получать<br> новости о Liquid Bonus ICO и запуске проекта</p>
+          </div>
+          <div class="header-top__personal">
+            <p>
+              <a class="header-top__personal-join" href="#">Регистрация</a>
+              <span>или</span>
+              <a class="header-top__personal-login" href="#">Вход</a>
+            </p>
+          </div>
+          <div class="header-top__discount">
+            <p>ТЕКУЩАЯ ПРЕМИЯ 15% <span>(действительно до 31.10.2017 / 12:00)</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <form name="select-language" class="select-language">
+          <select>
+            <option>Ru</option>
+            <option>En</option>
+          </select>
+        </form>
+        <nav class="main-menu">
+          <ul>
+            <li class="main-menu__item main-menu__item--home"><a href="#">Главная</a></li>
+            <li class="main-menu__item main-menu__item--about"><a href="#">О нас</a></li>
+            <li class="main-menu__item main-menu__item--our-team"><a href="#">Команда</a></li>
+            <li class="main-menu__item main-menu__item--roadmap"><a href="#">Дорожная карта</a></li>
+            <li class="main-menu__item main-menu__item--qa"><a href="#">Вопросы и ответы</a></li>
+            <li class="main-menu__item main-menu__item--rewards"><a href="#">Награды</a></li>
+            <li class="main-menu__item main-menu__item--blog"><a href="#">Блог</a></li>
+            <li class="main-menu__item main-menu__item--press"><a href="#">Пресса</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  
+  <div class="main-content">
+    <div class="container">
+      <section class="home" id="home">
+        <article>
+          <header>
+            <h1>В начало</h1>
+            <h2>Каждый год в рамках действующих программ лояльности только в США эмитируется бонусов на $48 миллиардов, но всего лишь одна треть этих денег находит своего потребителя</h2>
+          </header>
+          <p>Согласно исследованию под названием «Прогноз потребительских программ лояльности потребителей США в 2011 году», из приблизительно $ 48 млрд. оценочной стоимости выпускаемых американскими компаниями премиальных бонусов и миль, по крайней мере, одна треть, представляющая собой 16 миллиардов долларов США, остается неиспользованной потребителями. (Совместное исследование SWIFT EXCHANGE и COLLOQUY от 2011 года)</p>
+          <aside>Дорогостоящие в развертывании и эксплуатации, самодостаточные и изолированные друг от друга, традиционные программы лояльности и их коалиции, имеют ограниченную территорию использования, реализованы на неконвертируемых носителях фиксированного срока действия с очень узкими возможностями для покупателей. Все это делает процесс конвертации бонусных баллов в стоимость товара настолько сложным и требующим особого внимания со стороны клиента, что традиционные программы лояльности и их коалиции продолжают сталкиваться с серьезными препятствиями на пути к действительно глобальному охвату и повсеместному использованию таких программ.</aside>
+          <p>В соответствии с двухлетним отчетом COLLOQUY о масштабах программ поощрения клиентов США: «американские домохозяйства участвуют в 29 программах лояльности из розничных, финансовых услуг, туризма и других экономических секторов, но реально используют только в 12 из них.  Соответствующие показатели 2013 года составляли 22 и 9». Согласно исследованию 2011 года CLLOQUY Loyalty Census «Из примерно $ 48 млрд. оцениваемой стоимости бонусного вознаграждения и миль американские компании выпускают ежегодно, по крайней мере одна треть, представляющая собой 16 миллиардов долларов, остается неиспользованной потребителями»</p>
+          <p><a href="#" class="inline-link">Среда Агрегирования Лояльности Liquid Bonus®</a> призвана решить эту проблему благодаря совместному использованию общепринятой экономической модели традиционных программ лояльности с дополнительным экономическим стимулом, который появится у покупателей вместе с возможностью накапливать токены LiqBo®. Получая LiqBo® токены в качестве вознаграждения и(или) обменивая их на бонусы различных игроков рынка лояльности, потребители смогут легко «монетизировать» их в дальнейшем посредством получения скидки в обмен на токены LiqBo® при следующей покупке в другом месте.. В процессе создания и внедрения Liquid Bonus® Medium мы стремимся достичь гораздо более низкой себестоимости, чем текущие бизнес модели централизованных программ лояльности могут достигать и обеспечить намного более высокую пропускную способность и производительность, чем позволяют существующие открытые сети Blockchain.</p>
+        </article>
+  
+        <article class="loyalty-token">
+          <header>
+            <h1>Универсальный Токен Лояльности</h1>
+          </header>
+          <p>Чтобы унифицировать применение и стереть границы зоны приема баллов, миль и других неуниверсальных единиц премирования, был введен универсальный токен Liquid Bonus® или LiqBo® Token. LiqBo® - это утилитарный токен, предназначенный для абстрагирования (а иногда замены) баллов, марок, миль и других бонусных единиц. Таким образом, любой покупатель сможет получить токены LiqBo® в качестве вознаграждения в контексте любой существующей программы лояльности, или даже от отдельного магазина, до этого не инвестировавшего в систему поощрения клиентов  и обменять их на скидки в любой другой точке продаж, которая готова принять токены LiqBo® в обмен на скидку.</p>
+          <aside>Благодаря своей базовой Blockchain инфраструктуре, Среда Агрегирования Лояльности Liquid Bonus® с ее универсальным токеном LiqBo® откроет второе дыхание глобальной бизнес-модели лояльности, в результате чего распространение и частота использования средств поощрения клиентов выйдет на новый качественный уровень.</aside>
+        </article>
+  
+        <article>
+          <header>
+            <h1>Предложение</h1>
+            <h2>Программа «Ранняя Пташка»</h2>
+          </header>
+          <p>Наша программа «Ранняя Пташка» призвана завершить обоснование концепции, положенной в основу среды Liquid Bonus® и токена LiqBo® при участии широкой аудитории. Мы также хотели бы найти и установить прочные взаимовыгодные отношения с предпочтительными партнерами и стратегическими инвесторами. Продолжительность этой программы будет зависеть от того, насколько наша концепция будет хорошо воспринята рынком, и как быстро мы можем закрыть нашу потребность в стратегических партнерах и инвесторах. Мы ожидаем, продолжительность этого этапа не превысит один месяц. Пожалуйста, не стесняйтесь обращаться по любым вопросам по телефону +7 499 677 5883 или по электронной почте <a href="#" class="inline-link">marketing@finstick.net</a></p>
+          <aside>Программа «Ранняя Пташка» - уникальная возможность для всех приобрести Token LiqBo® в обмен на отличную работу, которая будет проделана в период подготовки к ICO и его проведения. Каждая роль, ее ценность и соответствующий пакет токенов LiqBo® должны быть определены и согласованы до конца программы «Ранняя Пташка».  Все участники, зарегистрированные в период программы «Ранняя Пташка», получат исключительную 10-процентную скидку от «до ICO» стоимости токена LiqBo®, поэтому только участники программы «Ранняя Пташка» смогут получить максимально возможную (до 20%) скидку на токены LiqBo®.</aside>
+          <p>Чтобы стать участником программы «Ранняя Пташка» и претендовать на максимальный дисконт, Вы должны <a href="#" class="inline-link">подать заявку</a> на включение в Белый Список программы «Ранняя Пташка». Это обязательный шаг для получения максимальной скидки. Мы не только хотели бы знать наших стратегических партнеров в лицо, но и понимать, как они хотели бы участвовать в экосистеме Liquid Bonus®.</p>
+        </article>
+      </section>
+  
+      <section class="about" id="about">
+        <article>
+          <header>
+            <h1>О нас</h1>
+            <h2>FINSTICK Innovations</h2>
+          </header>
+          <p>FINSTICK Innovations LLC - это стартап, призванный сыграть заметную роль в зарождающейся блокчейн-индустрии. Несмотря на то, что Liquid Bonus Ecosystem является первым проектом нашей команды в ее нынешнем составе, наши специалисты имеют множество уникальных разработок и несколько патентов на изобретения. Все наши достижения уже нашли свое успешное коммерческое применение и теперь предоставляют существенные конкурентные преимущества тем, кто их использует.</p>
+          <aside>Мы опытные и квалифицированные энтузиасты, которые провели от пятнадцати до двадцати лет, работая в области телекоммуникаций, индустрии смарт-карт, криптографии и ИТ-безопасности, системной интеграции, а также в области предоставления IT- услуг и аутсорсинга.</aside>
+          <h2>Предметами нашей особой гордости являются:</h2>
+          <ul>
+            <li>Успешный коммерческий опыт в разработке высоконагруженных систем массового обслуживания, внедрение критически важных приложений, предназначенных для удаленного администрирования и управления смарт-картами. Наша лучшая коммерческая система способна обслуживать сотни миллионов мобильных абонентов одновременно;</li>
+            <li>Ранняя реализация системы для осуществления безопасных мобильных платежей и мобильного банкинга с использованием современных криптографических возможностей SIM-карт. Первый коммерческий запуск решения, разработанного при непосредственном участии наших сотрудников, состоялся еще в 2002 году;</li>
+            <li>Уникальная запатентованная система для доставки мультимедийного контента в миллионы гетерогенных и несовместимых мобильных терминалов и смартфонов на базе Symbian, Java, iOS и Windows.</li>
+          </ul>
+          <p>Наши сотрудники и партнеры являются носителями лучших практик проектирования и разработки программного обеспечения, оптимизации алгоритмов, а также концептуализации и интеграции сложных ИТ-систем.</p>
+        </article>
+      </section>
+      
+      <section class="our-team" id="our-team">
+        <article>
+          <header>
+            <h1>Команда</h1>
+          </header>
+          <h2>Основная команда</h2>
+          <ul>
+            <li>
+              <img src="images/team/1.png">
+              <h3>Mike Costache</h3>
+              <h4>Strategy Advisor</h4>
+              <p>Founder of Blockchain Investors Consortium (BIC), Co-Chair of d10e</p>
+            </li>
+            <li class="team-video">
+              <a href="#"><img src="images/team/2.png"></a>
+              <h3>Mike Costache</h3>
+              <h4>Strategy Advisor</h4>
+              <p>Founder of Blockchain Investors Consortium (BIC), Co-Chair of d10e</p>
+            </li>
+            <li>
+              <img src="images/team/3.png">
+              <h3>Mike Costache</h3>
+              <h4>Strategy Advisor</h4>
+              <p>Founder of Blockchain Investors Consortium (BIC), Co-Chair of d10e</p>
+            </li>
+          </ul>
+          <h2>Наши консультанты</h2>
+          <ul>
+            <li>
+              <img src="images/team/4.png">
+              <h3>Mike Costache</h3>
+              <h4>Strategy Advisor</h4>
+              <p>Founder of Blockchain Investors Consortium (BIC), Co-Chair of d10e</p>
+            </li>
+            <li>
+              <img src="images/team/5.png">
+              <h3>Mike Costache</h3>
+              <h4>Strategy Advisor</h4>
+              <p>Founder of Blockchain Investors Consortium (BIC), Co-Chair of d10e</p>
+            </li>
+            <li class="team-video">
+              <a href="#"><img src="images/team/6.png"></a>
+              <h3>Mike Costache</h3>
+              <h4>Strategy Advisor</h4>
+              <p>Founder of Blockchain Investors Consortium (BIC), Co-Chair of d10e</p>
+            </li>
+          </ul>
+        </article>
+      </section>
+  
+      <section class="roadmap" id="roadmap">
+        <article>
+          <header>
+            <h1>Дорожная карта</h1>
+          </header>
+          <ul>
+            <li>
+              <h3>2013</h3>
+              <p>Coppasity<br> founded in<br> Santa Clara</p>
+            </li>
+            <li>
+              <h3>Since 2014</h3>
+              <p>Raised $1.8M<br> from angel investors</p>
+            </li>
+            <li>
+              <h3>Jan 2017</h3>
+              <p>Platform and 3D digitizing software is launched</p>
+            </li>
+            <li>
+              <h3>Oct 25, 2017</h3>
+              <p>Phaste 1 token sale is scheduled,<br> $30M</p>
+            </li>
+            <li>
+              <h3>Q1, 2018</h3>
+              <p>Phase 2token sale start 120 days affer phase 1 is finisched</p>
+            </li>
+            <li>
+              <h3>What's next?</h3>
+              <p>№1 decentralized ecosystem for AR/VR/3D</p>
+            </li>
+          </ul>
+        </article>
+      </section>
+  
+      <section class="qa" id="qa">
+        <article>
+          <header>
+            <h1>Вопросы и ответы</h1>
+          </header>
+          <section class="qa__item">
+            <h2><a href="#">Каким Вы видете экономический потенциал данного решения?</a></h2>
+            <p>Мы обнаружили ряд существенных недостатков практически у каждой программы лояльности, прежде всего это:<br>
+            - высокая стоимость развертывания и эксплуатации;<br>
+            - использование ограниченных по времени и территории применения, невозмещаемых в денежном эквиваленте средств хранения бонусов и привилегий, обеспечивающих очень узкие возможности для розничных клиентов;<br>
+            - самодостаточность и изоляция программ лояльности друг от друга, что делает процесс получения скидки нетривиальным и требующим особого внимания;<br>
+            Как следствие, «американские домохозяйства в среднем пользуются 29 программами лояльности одновременно. Эти программы относятся к розничной торговле, финансовым услугам, транспорту и туризму, а также к различным другим секторам экономики. Но при этом потребители активно используют лишь 12 из них. Соответствующие показатели участия американцев в программах лояльности 2013 года составляли всего 22 и 9». (Согласно двухлетнему отчету COLLOQUY о масштабах программ вознаграждения клиентов США) и «Из примерно $ 48 млрд. оцениваемой стоимости всех бонусов и миль, начисляемых ежегодно американскими компаниями, по меньшей мере одна треть, представляющая собой $ 16 млрд., остается невостребованной потребителями» (согласно исследованию 2011 года COLLOQUY Loyalty Census)</p>
+          </section>
+          <section class="qa__item">
+            <h2><a href="#">Будучи оператором программы лояльности, почему я должен участвовать в создании и работе другой системы, если я могу в случае необходимости осуществлять конвертацию бонусных баллов с использованием национальной валюты?</a></h2>
+            <p>Это очень правильный вопрос. Ответ кроится за экономической моделью. Среда Агрегирования Лояльности Liquid Bonus® основана на недорогой технологии Blockchain и поддерживается функциональностью Смарт Контрактов. Таким образом, каждый провайдер программы лояльности сможет решить, стоит ли в определенный момент фокусироваться на операционной марже и устанавливать максимальную транзакционную комиссию, либо должна быть установлена минимальная или нулевая комиссия с целью формирования оптимального предложения для покупателя. В случае, когда для конверсии бонусных баллов применяется традиционное банковское урегулирование (перевод баллов в национальную валюту с последующей их конвертацией в другие привилегии), любому оператору программы лояльности или покупателю придется покрыть гораздо более высокие расходы на конвертацию, устанавливаемые Третьей Стороной (банком или биржей). В последнем случае, комиссионное вознаграждение за проведение транзакции останется вне контроля провайдера программы лояльности и следовательно не сможет стимулировать рост его доходов.</p>
+          </section>
+          <section class="qa__item">
+            <h2><a href="#">Почему вы думаете, что большинство программ лояльности и поставщиков услуг заинтересуются вашим решением?</a></h2>
+            <p>На самом деле, мы считаем, что немедленное участие основных игроков рынка лояльности в работе Среды Агрегирования Лояльности Liquid Bonus® является спорным вопросом. Тем не менее, учитывая большой потенциал технологии блокчейн и опираясь на анализ того, что произошло и продолжает происходить с финансовыми рынками и криптовалютами, мы уверены, что поставщики, операторы программ лояльности, торговые сети и их коалиции, несомненно, найдут много преимуществ от использования нашего решения. Скорее всего, им потребуется некоторое время для адаптации и определения наиболее подходящего способа использования новой среды для развития их, пока еще закрытых, систем лояльности, но вскоре они откроют для себя новые возможности Liquid Bonus® для своего дальнейшего развития.</p>
+          </section>
+        </article>
+      </section>
+  
+      <section class="rewards" id="rewards">
+        <article>
+          <header>
+            <h1>Rewards / Bounty</h1>
+            <h2>Product vs Marketing: who wins<br> Earlier this summer, I decided it was time for a career change. As a young, scrappy, and hungry dreamer who sold enterprise software in San Francisco I felt like I was in a position to take advantage of all the opportunities that my life here had to offer.</h2>
+          </header>
+          <aside>Product vs Marketing: who wins<br> Earlier this summer, I decided it was time for a career change. As a young, scrappy, and hungry dreamer who sold enterprise software in San Francisco I felt like I was in a position to take advantage of all the opportunities that my life here had to offer.</aside>
+          <p>I had portfolio companies with stellar teams, and I was disappointed when they didn’t push the pedal on marketing or sales. I argued with co-investors, making the case that awesome partnership deals take time to put together, so kickstarting the effort early was essential, even before the product was ready for primetime.</p>
+          <p>The counterargument was, in the world of software, the product is your “funnel.” The problem with great marketing is that it will hide the leaks in that funnel, fooling you into believing the hype around your vanity metrics.</p>
+          <aside>Product vs Marketing: who wins<br> Earlier this summer, I decided it was time for a career change. As a young, scrappy, and hungry dreamer who sold enterprise software in San Francisco I felt like I was in a position to take advantage of all the opportunities that my life here had to offer.</aside>
+        </article>
+      </section>
+  
+      <section class="media">
+        <article>
+          <header>
+            <h1>Media</h1>
+          </header>
+          <ul>
+            <li><a href="#"><img src="images/media/1.png"></a></li>
+            <li><a href="#"><img src="images/media/2.png"></a></li>
+            <li><a href="#"><img src="images/media/3.png"></a></li>
+          </ul>
+        </article>
+      </section>
+  
+      <section class="blog" id="blog">
+        <div class="blog-navigation">
+          <button class="blog-navigation__button blog-navigation__button--back" disabled="disabled"></button>
+          <button class="blog-navigation__button blog-navigation__button--forward"></button>
+        </div>
+        <article>
+          <header>
+            <h1>Our blog</h1>
+          </header>
+          <ul>
+            <li class="blog-item blog-item--1 blog-item--visible">
+              <section>
+                <time>09.10.2017</time>
+                <h3>Choosing one company.</h3>
+                <p>Once the marketing hype fades away, this broken funnel comes to light, creating even more problems since lots of capital and important customer impressions have already washed through it.</p>
+                <a href="#" class="inline-link">read more</a>
+              </section>
+            </li>
+            <li class="blog-item blog-item--2 blog-item--visible">
+              <section>
+                <time>09.10.2017</time>
+                <h3>Choosing one company.</h3>
+                <p>Once the marketing hype fades away, this broken funnel comes to light, creating even more problems since lots of capital and important customer impressions have already washed through it.</p>
+                <a href="#" class="inline-link">read more</a>
+              </section>
+            </li>
+            <li class="blog-item blog-item--3">
+              <section>
+                <time>09.11.2017</time>
+                <h3>Choosing one company2.</h3>
+                <p>Once the marketing hype fades away, this broken funnel comes to light, creating even more problems since lots of capital and important customer impressions have already washed through it.</p>
+                <a href="#" class="inline-link">read more</a>
+              </section>
+            </li>
+            <li class="blog-item blog-item--4">
+              <section>
+                <time>09.11.2017</time>
+                <h3>Choosing one company2.</h3>
+                <p>Once the marketing hype fades away, this broken funnel comes to light, creating even more problems since lots of capital and important customer impressions have already washed through it.</p>
+                <a href="#" class="inline-link">read more</a>
+              </section>
+            </li>
+            <li class="blog-item blog-item--5">
+              <section>
+                <time>09.11.2017</time>
+                <h3>Choosing one company3.</h3>
+                <p>Once the marketing hype fades away, this broken funnel comes to light, creating even more problems since lots of capital and important customer impressions have already washed through it.</p>
+                <a href="#" class="inline-link">read more</a>
+              </section>
+            </li>
+            <li class="blog-item blog-item--6">
+              <section>
+                <time>09.11.2017</time>
+                <h3>Choosing one company3.</h3>
+                <p>Once the marketing hype fades away, this broken funnel comes to light, creating even more problems since lots of capital and important customer impressions have already washed through it.</p>
+                <a href="#" class="inline-link">read more</a>
+              </section>
+            </li>
+          </ul>
+        </article>
+        <div class="blog-pagination">
+          <ul>
+            <li class="blog-pagination__item blog-pagination__item--1 blog-pagination__item--active"><a href="#"></a></li>
+            <li class="blog-pagination__item blog-pagination__item--2"><a href="#"></a></li>
+            <li class="blog-pagination__item blog-pagination__item--3"><a href="#"></a></li>
+            <!-- <li class="blog-pagination__item"><a href="#"></a></li>
+            <li class="blog-pagination__item"><a href="#"></a></li>
+            <li class="blog-pagination__item"><a href="#"></a></li> -->
+          </ul>
+        </div>
+      </section>
+  
+      <section class="press" id="press">
+        <div class="press-navigation">
+          <button class="press-navigation__button press-navigation__button--back" disabled="disabled"></button>
+          <button class="press-navigation__button press-navigation__button--forward"></button>
+        </div>
+        <article>
+          <header>
+            <h1>Press</h1>
+          </header>
+          <ul>
+            <li class="press-item press-item--1 press-item--visible">
+              <section>
+                <h3>Choosing one company.</h3>
+                <p>Once the marketing hype fades away, this broken funnel comes to light, creating even more problems since lots of capital and important customer impressions have already washed through it.</p>
+                <a href="#" class="inline-link">read more</a>
+              </section>
+            </li>
+            <li class="press-item press-item--2 press-item--visible">
+              <section>
+                <h3>Choosing one company.</h3>
+                <p>Once the marketing hype fades away, this broken funnel comes to light, creating even more problems since lots of capital and important customer impressions have already washed through it.</p>
+                <a href="#" class="inline-link">read more</a>
+              </section>
+            </li>
+            <li class="press-item press-item--3">
+              <section>
+                <h3>Choosing one company2.</h3>
+                <p>Once the marketing hype fades away, this broken funnel comes to light, creating even more problems since lots of capital and important customer impressions have already washed through it.</p>
+                <a href="#" class="inline-link">read more</a>
+              </section>
+            </li>
+            <li class="press-item press-item--4">
+              <section>
+                <h3>Choosing one company2.</h3>
+                <p>Once the marketing hype fades away, this broken funnel comes to light, creating even more problems since lots of capital and important customer impressions have already washed through it.</p>
+                <a href="#" class="inline-link">read more</a>
+              </section>
+            </li>
+          </ul>
+        </article>
+        <div class="press-pagination">
+          <ul>
+            <li class="press-pagination__item blog-pagination__item--1 press-pagination__item--active"><a href="#"></a></li>
+            <li class="press-pagination__item blog-pagination__item--2"><a href="#"></a></li>
+            <!-- <li class="press-pagination__item"><a href="#"></a></li>
+            <li class="press-pagination__item"><a href="#"></a></li>
+            <li class="press-pagination__item"><a href="#"></a></li>
+            <li class="press-pagination__item"><a href="#"></a></li> -->
+          </ul>
+        </div>
+      </section>
+  
+    </div>
+  </div>
+  
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-courses">
+        <form name="footer-courses__form" class="footer-courses__form" action="#" method="GET">
+          <label>Contributed so far:</label>
+          <input type="text" name="footer-courses__btc-value" id="footer-courses__btc-value" value="120">
+          <label for="footer-courses__btc-value">BTC <span>&mdash;</span></label>
+          <input type="text" name="footer-courses__eth-value" id="footer-courses__eth-value" value="500">
+          <label for="footer-courses__eth-value">ETH <span>&mdash;</span></label>
+          <input type="text" name="footer-courses__liqbo-value" id="footer-courses__liqbo-value" value="850">
+          <label for="footer-courses__liqbo-value">LiqBo</label>
+          <input type="submit" name="footer-courses__form-submit" class="footer-courses__form-submit" value="LiqBo Calculator">
+        </form>
+      </div>
+    </div>
+  </footer>
+  
+  <div class="social-links">
+    <ul>
+      <li><a href="#" class="social-link social-link--fb">Facebook</a></li>
+      <li><a href="#" class="social-link social-link--vk">Vkontakte</a></li>
+      <li><a href="#" class="social-link social-link--ig">Instagram</a></li>
+      <li><a href="#" class="social-link social-link--yt">Youtube</a></li>
+      <li><a href="#" class="social-link social-link--gp">Google+</a></li>
+      <li><a href="#" class="social-link social-link--tg">Telegram</a></li>
+    </ul>
+  </div>
+  
+  <div class="back-to-top">
+    <button>Home</button>
+  </div>
+  
+  <!-- <a href="#" class="popup-link popup-link--purchase">Popup (покупка)</a>
+  <a href="#" class="popup-link popup-link--report">Popup (отчет)</a> -->
+
+  <div class="popup popup--purchase">
+    <div class="container--popup">
+      <button class="popup__close-button"></button>
+      <div class="popup__logo">
+        <a class="popup__logo-link" href="#"><img src="images/logo/logo.png" alt="LiqBo logo"></a>
+      </div>
+      <form name="popup__form" class="popup__form" action="#" method="GET">
+        <label>Выберите валюту</label>
+        <select>
+          <option>Etherium</option>
+          <option>Bitcoin</option>
+          <option>LiqBo</option>
+        </select>
+        <label>Ваш адрес Etherium</label>
+        <input type="text" name="popup__form-address" placeholder="Ваш адрес Etherium">
+        <p class="popup__form-help">Введите адрес Etherium для получения токенов LiqBo.<br> Вам нужен ECR20 совместимый кошелек Etherium. Используйте только адрес, которым вы управляете (не Coinbase, Blockchain.info<br> и аналогичные)</p>
+        <p class="popup__form-bonus">Бонус 3%</p>
+        <label>Сумма (ETH)</label>
+        <input type="text" name="popup__form-amount" placeholder="Сумма (ETH)">
+        <p class="popup__form-rate">ETH/USD обменный курс</p>
+        <p class="popup__form-help">1 ETH = 296.440000000 USD</p>
+        <h2>Количество токенов LiqBo</h2>
+        <p>включая бонус (3%): 88.932 LiqBO</p>
+        <p class="popup__form-help">Это оценочная сумма токенов LiqBo, которые вы получите.<br> Точная сумма будет рассчитываться после подтверждения транзакции и зависит от рыночной стоимости ETH/USD.</p>
+        <div class="popup__form-total">3053.322 LiqBo</div>
+        <!-- <label>Адрес электронной почты</label> -->
+        <label class="label-error">Заполните поле</label>
+        <input type="email" name="popup__form-email" class="input-error" placeholder="Адрес электронной почты">
+        <input type="submit" name="popup__form-submit" class="popup__form-submit popup__action-button" value="Отправить">
+        <p class="popup__form-terms">Создавая заявку на покупку, я соглашаюсь с <a href="#">Условиями использования</a></p>
+      </form>
+    </div>
+  </div>
+
+  <div class="popup popup--report">
+    <div class="container--popup">
+      <button class="popup__close-button"></button>
+      <div class="popup__logo">
+        <a class="popup__logo-link" href="#"><img src="images/logo/logo.png" alt="LiqBo logo"></a>
+      </div>
+      <article>
+        <h1>Информация о платеже</h1>
+        <label>Выполните оплату в</label>
+        <p>0xE45C09BfA7a408a2D4019AE75FFd4ae84d5440Bd</p>
+        <p class="popup__form-help"><a href="#">Показать QR-код</a></p>
+        <label>Сумма покупки</label>
+        <p>3049.8300000 LiqBo</p>
+        <label>Сумма счета</label>
+        <p>1.00000000 ETH</p>
+        <label>Полученная сумма</label>
+        <p>0.00000000 ETH</p>
+        <label>Список транзакций</label>
+        <p>Пока нет транзакций</p>
+        <a href="#" class=" popup__action-button return-purchase">Сделать еще одну покупку</a>
+      </article>
+    </div>
+  </div>
+
+  <div class="popup popup--calculator">
+    <div class="container--popup">
+      <button class="popup__close-button"></button>
+      <div class="popup__logo">
+        <a class="popup__logo-link" href="#"><img src="images/logo/logo.png" alt="LiqBo logo"></a>
+      </div>
+      <article>
+        <h1>LiqBo калькулятор</h1>
+        <form name="popup__form" class="popup__form" action="#" method="GET">
+          <input type="text" name="popup__form-sum" placeholder="Введите сумму">
+          <a href="#" class="popup__action-button calculator-button calculator-button--active">BTC</a>
+          <a href="#" class="popup__action-button calculator-button">ETH</a>
+          <a href="#" class="popup__action-button calculator-button">LIQBO</a>
+          <p class="popup__form-help">Введите сумму и переключайтесь между<br> валютами для ее конвертации</p>
+        </form>
+      </article>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="scripts/jquery.formstyler.min.js"></script>
+  <script type="text/javascript" src="scripts/main.js"></script>
+</body>
+</html>
