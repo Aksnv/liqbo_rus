@@ -232,7 +232,7 @@ label[for="agreement-form__checkbox"] {
   left: -9px;
   content: "";
   display: block;
-  width: 16px;
+  width: 17px;
   height: 16px;
   background-image: url("../images/sprite.png");
   background-position: -77px -37px;
@@ -1280,6 +1280,7 @@ label[for="agreement-form__checkbox"] {
   color: white;
   border: none;
   cursor: pointer;
+  z-index: 6;
 }
 
 .back-to-top button::before {
