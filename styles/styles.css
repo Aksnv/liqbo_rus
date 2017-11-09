@@ -926,6 +926,7 @@ label[for="agreement-form__checkbox"] {
   display: inline-block;
   vertical-align: top;
   margin-right: 5px;
+  cursor: pointer;
 }
 
 .media li::after {
@@ -943,6 +944,11 @@ label[for="agreement-form__checkbox"] {
 
 .media ul > li:last-child {
   margin-right: 0;
+}
+
+.media video {
+  max-width: 327px;
+  height: 219px;
 }
 
 /* Main content - Blog */
@@ -1042,7 +1048,8 @@ label[for="agreement-form__checkbox"] {
   line-height: 24px;
 }
 
-.blog time {
+.blog time,
+.press time {
   font-size: 15px;
   line-height: 24px;
   color: #94c399;
