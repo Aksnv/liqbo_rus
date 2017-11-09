@@ -1,3 +1,11 @@
+$(".news-pagination a").click(function(e) {
+  e.preventDefault();
+});
+
+$(".press-pagination a").click(function(e) {
+  e.preventDefault();
+});
+
 /* Back-to-top button */
 
 $(".back-to-top").click(function() {
