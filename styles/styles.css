@@ -691,10 +691,10 @@ label[for="agreement-form__checkbox"] {
   display: inline-block;
   vertical-align: top;
   /* width: 200px; */
-  width: 218px;
+  width: 227px;
   text-align: center;
   /* margin-right: 102px; */
-  margin-right: 75px;
+  margin-right: 62px;
 }
 
 .our-team ul > li:nth-child(3n + 3) {
