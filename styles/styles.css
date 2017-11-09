@@ -520,6 +520,18 @@ label[for="agreement-form__checkbox"] {
   cursor: default;
 }
 
+.select-language--en .jq-selectbox::before {
+  background-position: -17px -275px;
+}
+
+.select-language--ru .jq-selectbox::before {
+  background-position: -48px -319px;
+}
+
+.select-language--cn .jq-selectbox::before {
+  background-position: 0px -506px;
+}
+
 .select-language .jq-selectbox--en::before {
   background-position: -17px -275px;
 }
@@ -583,15 +595,27 @@ label[for="agreement-form__checkbox"] {
   background-image: url("../images/flags_sprite.png");
 }
 
-.select-language .jq-selectbox li:nth-child(1)::before {
+.select-language--en .jq-selectbox li:nth-child(1)::before {
   background-position: -17px -275px;
 }
 
-.select-language .jq-selectbox li:nth-child(2)::before {
+.select-language--en .jq-selectbox li:nth-child(2)::before {
   background-position: -48px -319px;
 }
 
-.select-language .jq-selectbox li:nth-child(3)::before {
+.select-language--en .jq-selectbox li:nth-child(3)::before {
+  background-position: 0px -506px;
+}
+
+.select-language--ru .jq-selectbox li:nth-child(1)::before {
+  background-position: -48px -319px;
+}
+
+.select-language--ru .jq-selectbox li:nth-child(2)::before {
+  background-position: -17px -275px;
+}
+
+.select-language--ru .jq-selectbox li:nth-child(3)::before {
   background-position: 0px -506px;
 }
 
