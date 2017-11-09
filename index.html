@@ -18,7 +18,7 @@
         </div>
         <div class="header-top__wrapper">
           <div class="header-top__agreement">
-            <p>Принимая участие в этом распределении токенов, Вы соглашаетесь с нашими <a href="docs/LiqBo_Условия использования.pdf">Условиями</a> и <a href="docs/LiqBo_Отказ от ответственности.pdf">Ограниченной ответственностью</a></p>
+            <p>Принимая участие в этом распределении токенов, Вы соглашаетесь<br> с нашими <a href="docs/LiqBo_Условия использования.pdf">Условиями</a> и <a href="docs/LiqBo_Отказ от ответственности.pdf">Ограниченной ответственностью</a></p>
             <form class="header-top__agreement-form" name="header-top__agreement-form" action="#" method="POST">
               <input type="checkbox" name="agreement-form__checkbox" id="agreement-form__checkbox">
               <label for="agreement-form__checkbox"></label>
@@ -34,9 +34,9 @@
               <li class="header-top__timer-seconds"><span></span>секунды</li>
             </ul>
           </div>
-          <div class="header-top__stay-tuned">
+          <div class="header-top__stay-tuned header-top__stay-tuned--ru">
             <strong>ОСТАВАЙТЕСЬ НА СВЯЗИ</strong>
-            <p><a href="#">Оставьте адрес email</a>, чтобы получать<br> новости о Liquid Bonus ICO и запуске проекта</p>
+            <p><a href="#">Оставьте email</a>, чтобы получать<br> новости о Liquid Bonus ICO<br> и запуске проекта</p>
           </div>
           <form name="header-top__subscribe-form" method="POST" action="#" class="header-top__subscribe-form">
             <input type="email" name="subscribe-form__email" class="subscribe-form__email" placeholder="example@mail.com">
@@ -58,17 +58,18 @@
           <select>
             <option>Ru</option>
             <option>En</option>
+            <option>Cn</option>
           </select>
         </form>
         <nav class="main-menu">
           <ul>
-            <li class="main-menu__item main-menu__item--home"><a href="#">Главная</a></li>
+            <li class="main-menu__item main-menu__item--home"><a href="#">Начало</a></li>
             <li class="main-menu__item main-menu__item--about"><a href="#">О нас</a></li>
             <li class="main-menu__item main-menu__item--our-team"><a href="#">Команда</a></li>
-            <li class="main-menu__item main-menu__item--roadmap"><a href="#">Дорожная карта</a></li>
-            <li class="main-menu__item main-menu__item--qa"><a href="#">Вопросы и ответы</a></li>
-            <li class="main-menu__item main-menu__item--rewards"><a href="#">Награды</a></li>
-            <li class="main-menu__item main-menu__item--blog"><a href="#">Блог</a></li>
+            <li class="main-menu__item main-menu__item--roadmap"><a href="#">Планы</a></li>
+            <li class="main-menu__item main-menu__item--qa"><a href="#">Вопросы/ответы</a></li>
+            <!-- <li class="main-menu__item main-menu__item--rewards"><a href="#">Награды</a></li> -->
+            <li class="main-menu__item main-menu__item--news"><a href="#">Новости</a></li>
             <li class="main-menu__item main-menu__item--press"><a href="#">Пресса</a></li>
           </ul>
         </nav>
@@ -81,7 +82,7 @@
       <section class="home" id="home">
         <article>
           <header>
-            <h1>В начало</h1>
+            <h1>Начало</h1>
             <p>Сегодня у Вас появилась <a href="#" class="inline-link inline-link--offering">уникальная возможность</a> встать у истоков зарождения новой глобальной экосистемы лояльности, приводимой в движение покупателями, а не торговыми сетями и лоялти-альянсами. Только такой подход сможет вывести рынок привлечения клиентов на новый качественный уровень, как с точки зрения адаптации предложений под нужды клиентов, так и по валовой выручке.</p>
             <h2>Каждый год в рамках действующих программ лояльности только в США эмитируется бонусов на $48 миллиардов, но всего лишь одна треть этих денег находит своего потребителя</h2>
           </header>
@@ -154,11 +155,12 @@
               <h3>Юлий Б. Кузнецов</h3>
               <h4>Основатель и генеральный директор<br> FINSTICK Innovations</h4>
               <p>бывш. Коммерческий директор<br> в Trafficland Limited<br>
-                бывш. Управляющий директор<br> в GEMPLUS-CIS<br> (сейчас Gemalto)<br>
-                <a href="mailto:julius@finstick.net" class="inline-link">julius@finstick.net</a><br>
-                <!-- Linkedin: <a href="http://www.linkedin.com/in/Julikuznetsov" class="inline-link">www.linkedin.com/in/Julikuznetsov</a> -->
-              <a href="http://www.linkedin.com/in/Julikuznetsov" class="inline-link">Linkedin</a>
-              </p>
+                бывш. Управляющий директор<br> в GEMPLUS-CIS<br>(сейчас Gemalto)</p>
+              <div class="our-team__links">
+                <a href="mailto:julius@finstick.net" class="our-team__link our-team__link--email"></a>
+                <a href="http://www.linkedin.com/in/Julikuznetsov" class="our-team__link our-team__link--linkedin"></a>
+                <a href="#" class="our-team__link our-team__link--facebook"></a>
+              </div>
             </li>
             <li class="team-video">
               <a href="#"><img src="images/team/2.png"></a>
@@ -266,7 +268,7 @@
         </article>
       </section>
   
-      <section class="rewards" id="rewards">
+      <!-- <section class="rewards" id="rewards">
         <article>
           <header>
             <h1>Rewards / Bounty</h1>
@@ -277,7 +279,7 @@
           <p>The counterargument was, in the world of software, the product is your “funnel.” The problem with great marketing is that it will hide the leaks in that funnel, fooling you into believing the hype around your vanity metrics.</p>
           <aside>Product vs Marketing: who wins<br> Earlier this summer, I decided it was time for a career change. As a young, scrappy, and hungry dreamer who sold enterprise software in San Francisco I felt like I was in a position to take advantage of all the opportunities that my life here had to offer.</aside>
         </article>
-      </section>
+      </section> -->
   
       <section class="media">
         <article>
@@ -289,7 +291,7 @@
             <li><a href="#"><img src="images/media/2.png"></a></li>
             <li><a href="#"><img src="images/media/3.png"></a></li> -->
             <li>
-              <video class="media__video-item media__video-item--1" controls="controls">
+              <video class="media__video-item media__video-item--1">
                 <source src="video/MVI_8120.MOV">
               </video>
             </li>
@@ -307,25 +309,25 @@
         </article>
       </section>
   
-      <section class="blog" id="blog">
-        <div class="blog-navigation">
-          <button class="blog-navigation__button blog-navigation__button--back" disabled="disabled"></button>
-          <button class="blog-navigation__button blog-navigation__button--forward"></button>
+      <section class="news" id="news">
+        <div class="news-navigation">
+          <button class="news-navigation__button news-navigation__button--back" disabled="disabled"></button>
+          <button class="news-navigation__button news-navigation__button--forward"></button>
         </div>
         <article>
           <header>
-            <h1>Our blog</h1>
+            <h1>Новости</h1>
           </header>
           <ul>
-            <li class="blog-item blog-item--1 blog-item--visible">
+            <li class="news-item news-item--1 news-item--visible">
               <section>
                 <time>09.10.2017</time>
                 <h3>Choosing one company.</h3>
                 <p>Once the marketing hype fades away, this broken funnel comes to light, creating even more problems since lots of capital and important customer impressions have already washed through it.</p>
-                <a href="#" class="inline-link blog-article blog-article--1">read more</a>
+                <a href="#" class="inline-link news-article news-article--1">read more</a>
               </section>
             </li>
-            <li class="blog-item blog-item--2 blog-item--visible">
+            <li class="news-item news-item--2 news-item--visible">
               <section>
                 <time>09.10.2017</time>
                 <h3>Choosing one company.</h3>
@@ -333,7 +335,7 @@
                 <a href="#" class="inline-link">read more</a>
               </section>
             </li>
-            <li class="blog-item blog-item--3">
+            <li class="news-item news-item--3">
               <section>
                 <time>09.11.2017</time>
                 <h3>Choosing one company2.</h3>
@@ -341,7 +343,7 @@
                 <a href="#" class="inline-link">read more</a>
               </section>
             </li>
-            <li class="blog-item blog-item--4">
+            <li class="news-item news-item--4">
               <section>
                 <time>09.11.2017</time>
                 <h3>Choosing one company2.</h3>
@@ -349,7 +351,7 @@
                 <a href="#" class="inline-link">read more</a>
               </section>
             </li>
-            <li class="blog-item blog-item--5">
+            <li class="news-item news-item--5">
               <section>
                 <time>09.11.2017</time>
                 <h3>Choosing one company3.</h3>
@@ -357,7 +359,7 @@
                 <a href="#" class="inline-link">read more</a>
               </section>
             </li>
-            <li class="blog-item blog-item--6">
+            <li class="news-item news-item--6">
               <section>
                 <time>09.11.2017</time>
                 <h3>Choosing one company3.</h3>
@@ -367,11 +369,11 @@
             </li>
           </ul>
         </article>
-        <div class="blog-pagination">
+        <div class="news-pagination">
           <ul>
-            <li class="blog-pagination__item blog-pagination__item--1 blog-pagination__item--active"><a href="#"></a></li>
-            <li class="blog-pagination__item blog-pagination__item--2"><a href="#"></a></li>
-            <li class="blog-pagination__item blog-pagination__item--3"><a href="#"></a></li>
+            <li class="news-pagination__item news-pagination__item--1 news-pagination__item--active"><a href="#"></a></li>
+            <li class="news-pagination__item news-pagination__item--2"><a href="#"></a></li>
+            <li class="news-pagination__item news-pagination__item--3"><a href="#"></a></li>
           </ul>
         </div>
       </section>
@@ -388,38 +390,42 @@
           <ul>
             <li class="press-item press-item--1 press-item--visible">
               <section>
-                <h3>Choosing one company.</h3>
-                <p>Once the marketing hype fades away, this broken funnel comes to light, creating even more problems since lots of capital and important customer impressions have already washed through it.</p>
-                <a href="#" class="inline-link">read more</a>
+                <time>Москва, 10 ноября 2017 года</time>
+                <h3>Пресс релиз</h3>
+                <p>Компания FINSTICK Innovations успешно завершила этап концептуализации Среды Агрегирования Лояльности Liquid Bonus® на основе технологии Blockchain.</p>
+                <a href="#" class="inline-link press-article press-article--1">читать далее</a>
               </section>
             </li>
             <li class="press-item press-item--2 press-item--visible">
               <section>
+                <time>09.11.2017</time>
                 <h3>Choosing one company.</h3>
                 <p>Once the marketing hype fades away, this broken funnel comes to light, creating even more problems since lots of capital and important customer impressions have already washed through it.</p>
-                <a href="#" class="inline-link">read more</a>
+                <a href="#" class="inline-link">читать далее</a>
               </section>
             </li>
             <li class="press-item press-item--3">
               <section>
+                <time>09.11.2017</time>
                 <h3>Choosing one company2.</h3>
                 <p>Once the marketing hype fades away, this broken funnel comes to light, creating even more problems since lots of capital and important customer impressions have already washed through it.</p>
-                <a href="#" class="inline-link">read more</a>
+                <a href="#" class="inline-link">читать далее</a>
               </section>
             </li>
             <li class="press-item press-item--4">
               <section>
+                <time>09.11.2017</time>
                 <h3>Choosing one company2.</h3>
                 <p>Once the marketing hype fades away, this broken funnel comes to light, creating even more problems since lots of capital and important customer impressions have already washed through it.</p>
-                <a href="#" class="inline-link">read more</a>
+                <a href="#" class="inline-link">читать далее</a>
               </section>
             </li>
           </ul>
         </article>
         <div class="press-pagination">
           <ul>
-            <li class="press-pagination__item blog-pagination__item--1 press-pagination__item--active"><a href="#"></a></li>
-            <li class="press-pagination__item blog-pagination__item--2"><a href="#"></a></li>
+            <li class="press-pagination__item news-pagination__item--1 press-pagination__item--active"><a href="#"></a></li>
+            <li class="press-pagination__item news-pagination__item--2"><a href="#"></a></li>
           </ul>
         </div>
       </section>
@@ -464,15 +470,18 @@
     <button>Home</button>
   </div>
 
-  <div class="popup popup--article">
+  <div class="popup popup--article popup--press-1">
     <div class="container--popup">
       <button class="popup__close-button"></button>
       <article>
         <header>
-          <time>09.10.2017</time>
-          <h1>Choosing one company</h1>
+          <time>Москва, 10 ноября 2017 года</time>
+          <h1>Компания FINSTICK Innovations успешно завершила этап концептуализации Среды Агрегирования Лояльности Liquid Bonus® на основе технологии Blockchain.</h1>
         </header>
-        <p>In order to unify the application and erase the circulation boundaries for reward points, miles and other proprietary utilities, the interoperable Liquid Bonus® or LiqBo® Token has been introduced. LiqBo® Token is the utility token aimed for abstracting from (sometimes replacing of) points, stamps, miles and other valued legacy bonus points. Thus every customer shall be able to get LiqBo® Tokens as reward in the context of any existing loyalty program or even from a standalone shop and exchange them for discounts at any point of sale that is ready to accept LiqBo® Tokens. In order to unify the application and erase the circulation boundaries for reward points, miles and other proprietary utilities, the interoperable Liquid Bonus® or LiqBo® Token has been introduced. LiqBo® Token is the utility token aimed for abstracting from (sometimes replacing of) points, stamps, miles and other valued legacy bonus points.</p>
+        <p>Компания FINSTICK Innovations успешно завершила этап концептуализации Среды Агрегирования Лояльности Liquid Bonus® на основе технологии Blockchain.</p>
+        <p>Система Liquid Bonus® Loyalty Aggregation Medium (<a href="http://www.liqbo.com/" class="inline-link">www.liqbo.com</a>) призвана устранить проблемы, связанные с самодостаточностью, замкнутостью и изолированностью программ лояльности друг от друга и, как следствие, низкую востребованность таких услуг со стороны потребителей. В самом деле, пройдя регистрацию в десятке разных программ поощрения покупателей,  среднестатистический клиент активно использует лишь 2-4 из них.  Среда Агрегирования Лояльности Liquid Bonus® призвана решить эту проблему благодаря совместному использованию общепринятой экономической модели традиционных программ лояльности с дополнительным экономическим стимулом, который появится у покупателей вместе с возможностью накапливать токены Liquid Bonus®, или LiqBo®. Получая LiqBo® токены в качестве вознаграждения и(или) обменивая их на бонусы различных игроков рынка лояльности, потребители смогут легко «монетизировать» их в дальнейшем посредством получения скидки в обмен на токены LiqBo®, либо обратного преобразования в частный неконвертируемый носитель дисконта в форме баллов или миль при следующей покупке в другом месте.</p>
+        <p>«В процессе создания и внедрения Среды Агрегирования Лояльности Liquid Bonus®, мы стремимся достичь гораздо более низкой себестоимости, чем сегодня предлагают существующие поставщики решений для реализации традиционных программ лояльности», - отметил Юлий Кузнецов, основатель и генеральный директор компании FINSTICK Innovations «Кроме того, мы обеспечим намного более высокую пропускную способность и производительность, чем позволяют конкурирующие решения построенные на существующих открытых сетях Blockchain.»</p>
+        <aside>О FINSTICK Innovations:<br>FINSTICK Innovations LLC (<a href="http://www.finstick.net/" class="inline-link">www.finstick.net</a>) - это стартап, ориентированный на разработку высокотехнологичных решений в развивающихся направлениях финтех и блокчейн. Ядро созданной в 2017 году компании FINSTICK Innovations составляют высоко мотивированные профессионалы в области криптографии, мобильных платежей, смарт-карт, телекоммуникаций и услуг с добавленной стоимостью. Обладая более, чем двадцатилетним уникальным практическим опытом работы и несколькими патентами на изобретения, наша команда использует лучшие Российские практики дизайна и разработки программного обеспечения, а также оптимизации алгоритмов, концептуализации и интеграции сложных ИТ-систем.</aside>
       </article>
     </div>
   </div>

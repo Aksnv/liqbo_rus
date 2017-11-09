@@ -148,6 +148,10 @@ input[type="submit"]:focus {
   background-color: #fffeba;
 }
 
+aside .inline-link {
+  font-family: 'loraitalic';
+}
+
 .inline-marker {
   font-family: 'geometriamedium';
   font-weight: 500;
@@ -239,15 +243,19 @@ label[for="agreement-form__checkbox"] {
 } 
 
  #agreement-form__checkbox:checked + label[for="agreement-form__checkbox"]::after {
-   position: absolute;
-   top: 5px;
-   left: 4px;
-   content: "";
-   display: block;
-   width: 8px;
-   height: 7px;
-   background-image: url("../images/sprite.png");
-   background-position: -78px -57px;
+  position: absolute;
+  top: 5px;
+  left: 4px;
+  content: "";
+  display: block;
+  width: 8px;
+  height: 7px;
+  background-image: url("../images/sprite.png");
+  background-position: -78px -57px;
+ }
+
+ #agreement-form__checkbox:checked + label + input[type="submit"] {
+  color: #21fc30;
  }
 
  .header-top__agreement-form input[type="submit"] {
@@ -327,6 +335,10 @@ label[for="agreement-form__checkbox"] {
   line-height: 14px;
   padding-top: 13px;
   padding-left: 46px;
+}
+
+.header-top__stay-tuned--ru {
+  padding-top: 1px;
 }
 
 .header-top__stay-tuned--hidden {
@@ -421,6 +433,10 @@ label[for="agreement-form__checkbox"] {
   z-index: 9;
 }
 
+.header-bottom--scroll .main-menu {
+  padding-left: 115px;
+}
+
 .header-personal {
   position: absolute;
   right: 0;
@@ -473,6 +489,7 @@ label[for="agreement-form__checkbox"] {
 }
 
 .select-language .jq-selectbox {
+  position: relative;
   width: 42px;
   height: 18px;
   font-family: 'geometriabold';
@@ -488,6 +505,31 @@ label[for="agreement-form__checkbox"] {
 
 .select-language .jq-selectbox select {
   width: auto;
+}
+
+.select-language .jq-selectbox::before {
+  position: absolute;
+  top: 2px;
+  left: -21px;
+  content: "";
+  display: block;
+  width: 16px;
+  height: 11px;
+  background-image: url("../images/flags_sprite.png");
+  background-position: -17px -275px;
+  cursor: default;
+}
+
+.select-language .jq-selectbox--en::before {
+  background-position: -17px -275px;
+}
+
+.select-language .jq-selectbox--ru::before {
+  background-position: -48px -319px;
+}
+
+.select-language .jq-selectbox--cn::before {
+  background-position: 0px -506px;
 }
 
 .select-language .jq-selectbox__select-text {
@@ -516,16 +558,41 @@ label[for="agreement-form__checkbox"] {
 }
 
 .select-language .jq-selectbox__dropdown ul {
-  left: -12px;
-  width: 50px;
+  left: -25px;
+  width: 55px;
   margin-top: 12px;
 }
 
 .select-language .jq-selectbox li {
+  position: relative;
   min-height: 40px;
   line-height: 40px;
+  padding-left: 25px;
   background-color: #0e6655;
   border-bottom: none;
+}
+
+.select-language .jq-selectbox li::before {
+  position: absolute;
+  top: 14px;
+  left: 4px;
+  content: "";
+  display: block;
+  width: 16px;
+  height: 11px;
+  background-image: url("../images/flags_sprite.png");
+}
+
+.select-language .jq-selectbox li:nth-child(1)::before {
+  background-position: -17px -275px;
+}
+
+.select-language .jq-selectbox li:nth-child(2)::before {
+  background-position: -48px -319px;
+}
+
+.select-language .jq-selectbox li:nth-child(3)::before {
+  background-position: 0px -506px;
 }
 
 .select-language .jq-selectbox li:hover {
@@ -623,9 +690,11 @@ label[for="agreement-form__checkbox"] {
   position: relative;
   display: inline-block;
   vertical-align: top;
-  width: 200px;
+  /* width: 200px; */
+  width: 218px;
   text-align: center;
-  margin-right: 102px;
+  /* margin-right: 102px; */
+  margin-right: 75px;
 }
 
 .our-team ul > li:nth-child(3n + 3) {
@@ -655,19 +724,44 @@ label[for="agreement-form__checkbox"] {
 .our-team h3 {
   font-size: 20px;
   line-height: 34px;
-  padding-top: 20px;
+  /* padding-top: 20px; */
+  margin-bottom: 2px;
 }
 
 .our-team h4 {
   font-size: 16px;
-  line-height: 34px;
-  margin-bottom: 15px;
+  /* line-height: 34px; */
+  line-height: 22px;
+  /* margin-bottom: 15px; */
+  margin-bottom: 4px;
 }
 
 .our-team p {
-  font-size: 15px;
-  line-height: 24px;
+  /* font-size: 15px;
+  line-height: 24px; */
+  font-size: 14px;
+  line-height: 18px;
   color: #94c399;
+}
+
+.our-team__link {
+  display: inline-block;
+  vertical-align: top;
+  width: 25px;
+  height: 25px;
+  background-image: url("../images/sprite.png");
+}
+
+.our-team__link--email {
+  background-position: -52px -358px;
+}
+
+.our-team__link--linkedin {
+  background-position: -52px -281px;
+}
+
+.our-team__link--facebook {
+  background-position: -52px -332px;
 }
 
 .our-team .team-video::before {
@@ -704,8 +798,9 @@ label[for="agreement-form__checkbox"] {
 
 .roadmap::after {
   position: absolute;
+  top: 150px;
   left: -190px;
-  bottom: 4px;
+  /* bottom: 4px; */
   content: "";
   display: block;
   width: 1140px;
@@ -718,13 +813,16 @@ label[for="agreement-form__checkbox"] {
   position: relative;
   left: -151px;
   width: 1074px;
-  padding-bottom: 50px;
+  /* padding-bottom: 50px; */
+  padding-bottom: 0;
 }
 
 .roadmap ul::after {
   position: absolute;
-  bottom: 0;
-  right: 146px;
+  /* bottom: 0;
+  right: 146px; */
+  top: -54px;
+  right: 128px;.header-bottom--scroll
   content: "";
   display: block;
   width: 11px;
@@ -747,8 +845,10 @@ label[for="agreement-form__checkbox"] {
 
 .roadmap li::before {
   position: absolute;
-  bottom: -15px;
-  left: 0;
+  /* bottom: -15px; */
+  top: -26px;
+  /* left: 0; */
+  left: 19px;
   content: "";
   display: block;
   width: 1px;
@@ -758,8 +858,10 @@ label[for="agreement-form__checkbox"] {
 
 .roadmap li::after {
   position: absolute;
-  bottom: -60px;
-  left: -14px;
+  top: -65px;
+  /* bottom: -60px; */
+  /* left: -14px; */
+  left: 4px;
   content: "";
   display: block;
   width: 26px;
@@ -805,6 +907,7 @@ label[for="agreement-form__checkbox"] {
 
 .roadmap h1 {
   text-align: center;
+  margin-bottom: 100px;
   padding-top: 56px;
 }
 
@@ -843,8 +946,10 @@ label[for="agreement-form__checkbox"] {
   position: relative;
   /* max-width: 145px; */
   max-width: 129px;
-  font-size: 15px;
-  line-height: 23px;
+  /* font-size: 15px;
+  line-height: 23px; */
+  font-size: 14px;
+  line-height: 18px;
   color: #94c399;
 }
 
@@ -862,7 +967,8 @@ label[for="agreement-form__checkbox"] {
 /* Main content - Q&A */
 
 .qa h1 {
-  padding-top: 100px;
+  /* padding-top: 100px; */
+  padding-top: 74px;
 }
 
 .qa h2 {
@@ -951,16 +1057,16 @@ label[for="agreement-form__checkbox"] {
   height: 219px;
 }
 
-/* Main content - Blog */
+/* Main content - News */
 /* Main content - Press */
 
-.blog-navigation,
+.news-navigation,
 .press-navigation {
   float: right;
   width: 117px;
 }
 
-.blog-navigation {
+.news-navigation {
   margin-top: 122px;
 }
 
@@ -968,7 +1074,7 @@ label[for="agreement-form__checkbox"] {
   margin-top: 76px;
 }
 
-.blog-navigation__button,
+.news-navigation__button,
 .press-navigation__button {
   float: left;
   display: block;
@@ -980,24 +1086,24 @@ label[for="agreement-form__checkbox"] {
   cursor: pointer;
 }
 
-.blog-navigation__button[disabled],
+.news-navigation__button[disabled],
 .press-navigation__button[disabled] {
   opacity: 0.5;
   cursor: default;
 }
 
-.blog-navigation__button--back,
+.news-navigation__button--back,
 .press-navigation__button--back {
   margin-right: 40px;
   background-position: -73px -1px;
 }
 
-.blog-navigation__button--forward,
+.news-navigation__button--forward,
 .press-navigation__button--forward {
   background-position: -73px -18px;
 }
 
-.blog h1 {
+.news h1 {
   margin-bottom: 20px;
   padding-top: 63px;
 }
@@ -1010,7 +1116,7 @@ label[for="agreement-form__checkbox"] {
   padding-top: 44px;
 }
 
-.blog h3,
+.news h3,
 .press h3 {
   font-family: 'geometriabold';
   font-size: 20px;
@@ -1019,17 +1125,17 @@ label[for="agreement-form__checkbox"] {
   padding-top: 4px;
 }
 
-.blog article,
+.news article,
 .press article {
   margin-bottom: 32px;
 }
 
-.blog .blog-item,
+.news .news-item,
 .press .press-item {
   display: none;
 }
 
-.blog .blog-item--visible,
+.news .news-item--visible,
 .press .press-item--visible {
   display: inline-block;
   vertical-align: top;
@@ -1037,25 +1143,25 @@ label[for="agreement-form__checkbox"] {
   margin-right: 86px;
 }
 
-.blog ul > .blog-item:nth-child(2n+2),
+.news ul > .news-item:nth-child(2n+2),
 .press ul > .press-item:nth-child(2n+2) {
   margin-right: 0;
 }
 
-.blog p,
+.news p,
 .press p {
   font-size: 15px;
   line-height: 24px;
 }
 
-.blog time,
+.news time,
 .press time {
   font-size: 15px;
   line-height: 24px;
   color: #94c399;
 }
 
-.blog a.inline-link,
+.news a.inline-link,
 .press a.inline-link {
   font-family: 'geometriaregular';
   font-size: 15px;
@@ -1063,12 +1169,12 @@ label[for="agreement-form__checkbox"] {
   line-height: 24px;
 }
 
-.blog-pagination ul,
+.news-pagination ul,
 .press-pagination ul {
   padding-left: 3px;
 }
 
-.blog-pagination li,
+.news-pagination li,
 .press-pagination li {
   position: relative;
   display: inline-block;
@@ -1077,12 +1183,12 @@ label[for="agreement-form__checkbox"] {
   margin-right: 8px;
 }
 
-.blog-pagination ul > li:last-child,
+.news-pagination ul > li:last-child,
 .press-pagination ul > li:last-child {
   margin-right: 0;
 }
 
-.blog-pagination a,
+.news-pagination a,
 .press-pagination a {
   display: block;
   width: 4px;
@@ -1091,7 +1197,7 @@ label[for="agreement-form__checkbox"] {
   border-radius: 50%;
 }
 
-.blog-pagination__item--active::before,
+.news-pagination__item--active::before,
 .press-pagination__item--active::before {
   position: absolute;
   top: -6px;
@@ -1572,7 +1678,7 @@ label[for="agreement-form__checkbox"] {
 /* Popup article */
 
 .popup--article {
-  padding-top: 147px;
+  padding-top: 50px;
   background-image: url("../images/bg.jpg");
   background-position: 50% 0;
   background-repeat: no-repeat;
@@ -1597,8 +1703,11 @@ label[for="agreement-form__checkbox"] {
 }
 
 .popup--article time {
+  display: inline-block;
+  vertical-align: top;
   font-size: 15px;
   line-height: 24px;
+  margin-bottom: 20px;
   color: #94c399;
 }
 
