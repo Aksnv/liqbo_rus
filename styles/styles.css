@@ -215,7 +215,7 @@ aside .inline-link {
 }
 
 .header-top__agreement p {
-  width: 612px;
+  width: 614px;
   line-height: 18px;
   padding-top: 6px;
 }
@@ -439,7 +439,7 @@ label[for="agreement-form__checkbox"] {
 
 .header-personal {
   position: absolute;
-  right: 0;
+  right: 5px;
   top: -81px;
 }
 
@@ -547,6 +547,7 @@ label[for="agreement-form__checkbox"] {
 .select-language .jq-selectbox__select-text {
   line-height: 18px;
   padding-left: 0;
+  padding-right: 0;
 }
 
 .select-language .jq-selectbox__trigger-arrow {
@@ -707,6 +708,7 @@ label[for="agreement-form__checkbox"] {
 /* Main content - Our team */
 
 .our-team ul {
+  text-align: center;
   margin-bottom: 18px;
 }
 
@@ -719,6 +721,7 @@ label[for="agreement-form__checkbox"] {
   text-align: center;
   /* margin-right: 102px; */
   margin-right: 62px;
+  margin-bottom: 30px;
 }
 
 .our-team ul > li:nth-child(3n + 3) {
@@ -1167,6 +1170,11 @@ label[for="agreement-form__checkbox"] {
   margin-right: 86px;
 }
 
+.press .press-item--visible {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
 .news ul > .news-item:nth-child(2n+2),
 .press ul > .press-item:nth-child(2n+2) {
   margin-right: 0;
@@ -1257,7 +1265,7 @@ label[for="agreement-form__checkbox"] {
 .footer-content__courses {
   display: inline-block;
   vertical-align: top;
-  margin-right: 45px;
+  margin-right: 40px;
 }
 
 .footer-content__courses span {
