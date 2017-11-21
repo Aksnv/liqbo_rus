@@ -419,13 +419,31 @@ $(".popup--calculator .popup__close-button").click(function() {
   $(".popup--calculator").toggleClass("popup--active");
 });
 
+$(".interaction__form").click(function(e) {
+  e.preventDefault();
+  $(".popup--feedback").toggleClass("popup--active");
+});
+
+$(".popup--feedback .popup__close-button").click(function() {
+  $(".popup--feedback").toggleClass("popup--active");
+});
+
 $(".press-article--1").click(function(e) {
   e.preventDefault();
   $(".popup--press-1").toggleClass("popup--active");
 });
 
-$(".popup--article .popup__close-button").click(function() {
+$(".popup--press-1 .popup__close-button").click(function() {
   $(".popup--press-1").toggleClass("popup--active");
+});
+
+$(".interaction__document").click(function(e) {
+  e.preventDefault();
+  $(".popup--wp").toggleClass("popup--active");
+});
+
+$(".popup--wp .popup__close-button").click(function() {
+  $(".popup--wp").toggleClass("popup--active");
 });
 
 
@@ -631,18 +649,18 @@ $(".header-bottom__close-button").click(function() {
 /* Mobile footer */
 
 $(window).resize(function() {
-  if ($(".container").css("width") <= "768px") {
-    $(".footer-content__calculator-button").text("Calculator");
-  } else {
+  if ($(".container").css("width") == "1175px") {
     $(".footer-content__calculator-button").text("Liqbo Calculator");
+  } else {
+    $(".footer-content__calculator-button").text("Calculator");
   }
 });
 
 $(document).ready(function() {
-  if ($(".container").css("width") <= "768px") {
-    $(".footer-content__calculator-button").text("Calculator");
-  } else {
+  if ($(".container").css("width") == "1175px") {
     $(".footer-content__calculator-button").text("Liqbo Calculator");
+  } else {
+    $(".footer-content__calculator-button").text("Calculator");
   }
 });
 
