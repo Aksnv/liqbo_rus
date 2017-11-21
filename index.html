@@ -8,17 +8,18 @@
   <link rel="icon" type="image/x-icon" href="images/icons/favicon.ico">
   <link rel="stylesheet" type="text/css" href="styles/jquery.formstyler.css">
   <link rel="stylesheet" type="text/css" href="styles/styles.css">
+  <script src="scripts/jquery-3.2.1.min.js"></script>
 </head>
 <body>
   <header class="header">
-    <div class="header-top">
+    <div class="header-top header-top--ru">
       <div class="container">
         <div class="header-top__logo">
           <a class="header-top__logo-link" href="#"><img src="images/logo/logo.png" alt="LiqBo logo"></a>
         </div>
         <div class="header-top__wrapper">
-          <div class="header-top__agreement">
-            <p>Принимая участие в этом распределении токенов, Вы соглашаетесь<br> с нашими <a href="docs/LiqBo_Условия использования.pdf">Условиями</a> и <a href="docs/LiqBo_Отказ от ответственности.pdf">Ограниченной ответственностью</a></p>
+          <div class="header-top__agreement header-top__agreement--ru">
+            <p>Принимая участие в этом распределении токенов, Вы соглашаетесь <span class="br">с нашими <a href="docs/LiqBo_Условия использования.pdf">Условиями</a> и <a href="docs/LiqBo_Отказ от ответственности.pdf">Ограниченной ответственностью</a></span></p>
             <form class="header-top__agreement-form" name="header-top__agreement-form" action="#" method="POST">
               <input type="checkbox" name="agreement-form__checkbox" id="agreement-form__checkbox">
               <label for="agreement-form__checkbox"></label>
@@ -26,33 +27,45 @@
             </form>
           </div>
           <div class="header-top__timer">
-            <p>PRE-ICO (ICO)</p>
+            <p>PRE-ICO через</p>
             <ul>
               <li class="header-top__timer-days"><span></span>дни</li>
               <li class="header-top__timer-hours"><span></span>часы</li>
               <li class="header-top__timer-minutes"><span></span>минуты</li>
               <li class="header-top__timer-seconds"><span></span>секунды</li>
             </ul>
+            <button class="header-top__timer-button"></button>
           </div>
           <div class="header-top__stay-tuned header-top__stay-tuned--ru">
             <strong>ОСТАВАЙТЕСЬ НА СВЯЗИ</strong>
-            <p><a href="#">Оставьте email</a>, чтобы получать<br> новости о Liquid Bonus ICO<br> и запуске проекта</p>
+            <p><a href="#">Оставьте email</a>, чтобы получать <span class="br">новости о Liquid Bonus ICO</span> <span class="br">и запуске проекта</span></p>
           </div>
-          <form name="header-top__subscribe-form" method="POST" action="#" class="header-top__subscribe-form">
-            <input type="email" name="subscribe-form__email" class="subscribe-form__email" placeholder="example@mail.com">
+          <div class="header-top__subscriber">
+            <strong> </strong>
+            <p><a href="#" class="inline-link">отписаться</a></p>
+          </div>
+          <form name="header-top__subscribe-form" method="POST" action="#" class="header-top__subscribe-form" id="subscribe">
+            <input type="email" name="subscribe-form__email" class="subscribe-form__email" placeholder="example@mail.com" id="email">
             <input type="submit" name="subscribe-form__submit" class="subscribe-form__submit" value="Subscribe">
             <button class="subscribe-form__close-button"></button>
           </form>
+<<<<<<< HEAD
           <div class="header-top__discount">
             <p>ТЕКУЩАЯ ПРЕМИЯ 15% <span>(действительно до 31.10.2017 / 12:00)</span></p>
           </div>
+          <button class="header-top__menu-button"></button>
+=======
+          <!--<div class="header-top__discount">-->
+            <!--<p>ТЕКУЩАЯ ПРЕМИЯ 15% <span>(действительно до 31.10.2017 / 12:00)</span></p>-->
+          <!--</div>-->
+>>>>>>> 3e1b84dee206a2133b844662379f344b89c04ef2
         </div>
       </div>
     </div>
     <div class="header-bottom">
       <div class="container">
-        <div class="header-personal">
-          <a class="header-personal__button" href="#">Регистрация <span>или</span> Вход</a>
+        <div class="header-personal header-personal--ru">
+          <a class="header-personal__button" href="//user.liqbo.com/">Регистрация <span>или</span> Вход</a>
         </div>
         <form name="select-language" class="select-language select-language--ru">
           <select>
@@ -61,7 +74,7 @@
             <option>Cn</option>
           </select>
         </form>
-        <nav class="main-menu">
+        <nav class="main-menu main-menu--ru">
           <ul>
             <li class="main-menu__item main-menu__item--home"><a href="#">Начало</a></li>
             <li class="main-menu__item main-menu__item--about"><a href="#">О нас</a></li>
@@ -73,6 +86,7 @@
             <li class="main-menu__item main-menu__item--press"><a href="#">Пресса</a></li>
           </ul>
         </nav>
+        <button class="header-bottom__close-button"></button>
       </div>
     </div>
   </header>
@@ -82,8 +96,68 @@
       <section class="home" id="home">
         <article>
           <header>
-            <h1>Начало</h1>
-            <p>Сегодня у Вас появилась <a href="#" class="inline-link inline-link--offering">уникальная возможность</a> встать у истоков зарождения новой глобальной экосистемы лояльности, приводимой в движение покупателями, а не торговыми сетями и лоялти-альянсами. Только такой подход сможет вывести рынок привлечения клиентов на новый качественный уровень, как с точки зрения адаптации предложений под нужды клиентов, так и по валовой выручке.</p>
+            <br/>
+            <br/>
+            <h2>Сегодня у Вас появилась <a href="#" class="inline-link inline-link--offering">уникальная возможность</a> встать у истоков зарождения новой глобальной экосистемы лояльности, приводимой в движение покупателями, а не торговыми сетями и лоялти-альянсами. Только такой подход сможет вывести рынок привлечения клиентов на новый качественный уровень, как с точки зрения адаптации предложений под нужды клиентов, так и по валовой выручке.</h2>
+
+            <h1 class="bring_title_1">Что мы даем покупатетям</h1>
+            <ul class="bring">
+              <li>
+                <img src="images/bring/LOWER-COMPLEXITY.jpg">
+                <h4>Простота</h4>
+                <p>регистрации и вознаграждений</p>
+              </li>
+              <li>
+                <img src="images/bring/SINGLE-ENTRY-POINT.jpg">
+                <h4>Единая точка входа</h4>
+                <p>Многочисленных дисконтных программ и программ лояльности</p>
+              </li>
+              <li>
+                <img src="images/bring/SMOOTH-EARN-&-REWARD.jpg">
+                <h4>Собирайте и обменивайте на скидки</h4>
+                <p>по всему миру</p>
+              </li>
+              <li>
+                <img src="images/bring/FRIENDLY-CROSS-BORDER-REWARDS.jpg">
+                <h4>Дружелюбные перекресные скидки</h4>
+                <p>для туристов и деловых путешественников</p>
+              </li>
+            </ul>
+
+            <h1 class="bring_title_2">Что мы даем бизнесу</h1>
+            <ul class="bring">
+              <li>
+                <img src="images/bring/HIGHER-CUSTOMER-ENVOLVEMENT-2.jpg">
+                <h4>Более высокое вовлечение покупателей</h4>
+                <p>благодаря унифицированному мобильному приложению</p>
+              </li>
+              <li>
+                <img src="images/bring/SAVE-ON-ROLLOUT-&-OPS.jpg">
+                <h4>Экономьте на запуске и экспл.</h4>
+                <p>Ваших дисконтных программ и программ лояльности</p>
+              </li>
+              <li>
+                <img src="images/bring/EARN-ON-CONVERSION.jpg">
+                <h4>Зарабатывайте на конвертации</h4>
+                <p>баллов миль и других инструментов в/из LiqBo®</p>
+              </li>
+              <li>
+                <img src="images/bring/EXTEND-YOUR-CUSTOMER-BASE--1.jpg">
+                <h4>Расширяйте базу клиентов</h4>
+                <p>благодаря новому уровню взаимодействия и отсутствию потребностей в сложных схемах партнерства с другими дисконтными программами.</p>
+              </li>
+            </ul>
+
+            <!--<div class="block_question">-->
+            <!--<div class="line"></div>-->
+            <!--<div>-->
+            <!--<span>Есть что обсудить?  <a href="https://t.me/LiquidBonus" target="_blank">Общайтесь с нами в чате</a></span>-->
+            <!--<span class="center_question">Есть предложения или комментарии?  <a href="#">Заполните форму</a></span>-->
+            <!--<span>Хотите узнать больше? <a href="#">Изучите</a></span>-->
+            <!--</div>-->
+            <!--<div class="line"></div>-->
+            <!--</div>-->
+
             <h2>Каждый год в рамках действующих программ лояльности только в США эмитируется бонусов на $48 миллиардов, но всего лишь одна треть этих денег находит своего потребителя</h2>
           </header>
           <p>Согласно исследованию под названием «Прогноз потребительских программ лояльности потребителей США в 2011 году», из приблизительно $ 48 млрд. оценочной стоимости выпускаемых американскими компаниями премиальных бонусов и миль, по крайней мере, одна треть, представляющая собой 16 миллиардов долларов США, остается неиспользованной потребителями. (Совместное исследование SWIFT EXCHANGE и COLLOQUY от 2011 года)</p>
@@ -149,13 +223,13 @@
             <h1>Команда</h1>
           </header>
           <h2>Основная команда</h2>
-          <ul>
+          <ul class="team_list">
             <li>
-              <img src="images/team/kuznetsov.png">
+              <img src="images/team/kuznetsov.jpg">
               <h3>Юлий Б. Кузнецов</h3>
               <h4>Основатель и генеральный директор<br> FINSTICK Innovations</h4>
-              <p>бывш. Коммерческий директор<br> в Trafficland Limited<br>
-                бывш. Управляющий директор<br> в GEMPLUS-CIS<br>(сейчас Gemalto)</p>
+              <p>бывш. Коммерческий директор<br> в <a class="inline-link" href="http://rus.trafficland.ru/" target="_blank">Trafficland Limited</a><br>
+                бывш. Управляющий директор<br> в <a class="inline-link" href="www.gemplus.com" target="_blank">GEMPLUS-CIS</a><br>(сейчас Gemalto)</p>
               <div class="our-team__links">
                 <a href="mailto:julius@finstick.net" class="our-team__link our-team__link--email"></a>
                 <a href="http://www.linkedin.com/in/Julikuznetsov" class="our-team__link our-team__link--linkedin"></a>
@@ -163,10 +237,10 @@
               </div>
             </li>
             <li>
-              <img src="images/team/marinenko.png">
+              <img src="images/team/marinenko.jpg">
               <h3>Александр Мариненко</h3>
               <h4>Сооснователь и технический директор<br> FINSTICK Innovations</h4>
-              <p>бывш. Технический директор в Intistele.com<br>бывш. Технический лид в Trafficland Limited</p>
+              <p>бывш. Технический директор в <a class="inline-link" href="https://www.intistele.com/" target="_blank">Intis Telecom</a><br>бывш. Технический лид в <a class="inline-link" href="http://rus.trafficland.ru/" target="_blank">Trafficland Limited</a></p>
               <div class="our-team__links">
                 <a href="mailto:alex@finstick.net" class="our-team__link our-team__link--email"></a>
                 <a href="https://www.linkedin.com/in/alex-marinenko" class="our-team__link our-team__link--linkedin"></a>
@@ -174,10 +248,10 @@
               </div>
             </li>
             <li>
-              <img src="images/team/smelova.png">
+              <img src="images/team/smelova.jpg">
               <h3>Ирина Смелова</h3>
-              <h4>Финансовый директор</h4>
-              <p>Вице-президент по финансам<br> и инвестициям, член Правления<br> Группа компаний "Сегежа"</p>
+              <h4>Финансовый директор<br> FINSTICK Innovations</h4>
+              <p>Вице-президент по финансам<br> и инвестициям, член Правления<br> <a class="inline-link" href="https://segezha-group.com/" target="_blank">Группа компаний "Сегежа"</a></p>
               <!-- <div class="our-team__links">
                 <a href="#" class="our-team__link our-team__link--email"></a>
                 <a href="#" class="our-team__link our-team__link--linkedin"></a>
@@ -185,29 +259,44 @@
               </div> -->
             </li>
             <li>
-              <img src="images/team/1-1.png">
-              <h3></h3>
-              <h4></h4>
-              <p>Директор по развитию взаимоотношений - программы лояльности и стратегическое партнерство</p>
-              <!-- <div class="our-team__links">
-                <a href="#" class="our-team__link our-team__link--email"></a>
-                <a href="#" class="our-team__link our-team__link--linkedin"></a>
-                <a href="#" class="our-team__link our-team__link--facebook"></a>
-              </div -->
+              <img src="images/team/ogorodnikov.jpg">
+              <h3>Евгений Огородников</h3>
+              <h4>Директор по стратегии данных,<br/> руководитель департамента Блокчейн и CRM</h4>
+              <p>бывш. Руководитель проектов SAP <a class="inline-link" href="http://www.teamidea.ru/" target="_blank">ООО "Тимидея Групп"</a>
+                (16 успешных проектов по созданию различных ИТ-систем на основе продуктов SAP для ОАО "Формула Холдинг",
+                <a class="inline-link" href="http://euroset.ru" target="_blank">"Евросеть"</a>,
+                Розничная сеть <a class="inline-link" href="http://www.mts.ru" target="_blank">МТС (ЗАО «РТК»)</a>,
+                <a class="inline-link" href="http://www.profmax.pro/" target="_blank">PROFMAX</a>,
+                <a class="inline-link" href="" target="_blank">Enter</a>,
+                <a class="inline-link" href="http://bezant.ru/" target="_blank">"Безант-1"</a>,
+                <a class="inline-link" href="http://www.tn.ru/" target="_blank">ТехноНИКОЛЬ</a>,
+                <a class="inline-link" href="https://www.exist.ru/" target="_blank">Exist</a>,
+                Большой Универсальный Магазин (<a class="inline-link" href="https://bum-tv.ru/" target="_blank">БУМ-ТВ</a>) и другие)<br/>
+                бывш. Директор по корпоративному развитию, Член Совета Директоров ОАО «Формула Холдинг»
+                (Ритейл - дистрибуция алкогольной продукции)
+              </p>
+              <div class="our-team__links">
+                <a href="mailto:eogorodnikov@finstick.net" class="our-team__link our-team__link--email"></a>
+                <a href="https://www.linkedin.com/in/evgeny-ogorodnikov-67b8b8a5/" class="our-team__link our-team__link--linkedin"></a>
+                <a href="skype:evgeny_o" class="our-team__link our-team__link--skype"></a>
+              </div>
             </li>
             <li>
-              <img src="images/team/2-1.png">
-              <h3></h3>
-              <h4></h4>
-              <p>Директор по стратегии данных, руководитель департамента Блокчейн и CRM</p>
-              <!-- <div class="our-team__links">
-                <a href="#" class="our-team__link our-team__link--email"></a>
-                <a href="#" class="our-team__link our-team__link--linkedin"></a>
-                <a href="#" class="our-team__link our-team__link--facebook"></a>
-              </div -->
+              <img src="images/team/rene.jpg">
+              <h3>René Barchi</h3>
+              <h4>Директор по развитию бизнеса<br>FINSTICK Innovations</h4>
+              <p>
+                бывш. Генеральный менеджер по России, странам СНГ и Монголии компании <a class="inline-link" href="https://www.ingenico.com/" target="_blank">Ingenico Group</a>, Генеральный директор ООО "Инженико СНГ"</br>
+                бывш. Генеральный менеджер по России, странам СНГ и Монголии компании <a class="inline-link" href="http://www.gemalto.com/" target="_blank">Gemalto</a>
+              </p>
+              <div class="our-team__links">
+                <a href="mailto:rene@finstick.net" class="our-team__link our-team__link--email"></a>
+                <!--<a href="#" class="our-team__link our-team__link&#45;&#45;linkedin"></a>-->
+                <!--<a href="#" class="our-team__link our-team__link&#45;&#45;facebook"></a>-->
+              </div>
             </li>
             <li>
-              <img src="images/team/3-1.png">
+              <img src="images/team/5.png">
               <h3></h3>
               <h4></h4>
               <p>Директор по маркетингу и массовым коммуникациям</p>
@@ -219,12 +308,12 @@
             </li>
           </ul>
           <h2>Наши консультанты</h2>
-          <ul>
+          <ul class="team_list">
             <li>
-              <img src="images/team/4-1.png">
+              <img src="images/team/smelov.jpg">
               <h3>Алексей Смелов</h3>
               <h4>Стратегия,<br> Развитие бизнеса</h4>
-              <p>Технический Директор<br> в Синтерра-Сибирь<br> бывш. Директор по международным рынкам<br> Аилайн Кэмьюникейшнс<br>
+              <p>Технический директор ЗАО «СИНТЕРРА-СИБИРЬ»,<br/> группа компаний «МегаФон»<br> бывш. Директор по международным рынкам<br> Аилайн Кэмьюникейшнс<br>
               бывш. Директор по новым технологиям и услугам<br> Мобильные ТелеСистемы</p>
             </li>
             <li>
@@ -273,7 +362,7 @@
         </article>
       </section>
   
-      <section class="roadmap" id="roadmap">
+      <section class="roadmap roadmap--ru" id="roadmap">
         <article>
           <header>
             <h1>Дорожная карта</h1>
@@ -281,7 +370,7 @@
           <ul>
             <li class="roadmap-item--full">
               <h3>2004</h3>
-              <p>Создана компания Trafficland Limited для разработки и внедрения решений по дистанционному управлению смарт-картами, серверных VAS-платформ для MNO и приложений мобильного банкинга</p>
+              <p>Создана компания <a class="inline-link" href="http://rus.trafficland.ru/" target="_blank">Trafficland Limited</a> для разработки и внедрения решений по дистанционному управлению смарт-картами, серверных VAS-платформ для MNO и приложений мобильного банкинга</p>
             </li>
             <li class="roadmap-item--full">
               <h3>2007</h3>
@@ -291,7 +380,7 @@
               <h3>2012</h3>
               <p>Разработано и запущено в коммерческую эксплуатацию высоконагруженная система массового обслуживания критически важных приложений для удаленного администрирования и управления сотней миллионов абонентских смарт-карт</p>
             </li>
-            <li class="roadmap-item--empty">
+            <li class="roadmap-item--full">
               <h3>2017</h3>
               <p>Успешно создано и протестировано лабораторное решение для обоснования концепции Liquid Bonus®, создана компания FINSTICK Innovations фокусирующая свои усилия на технологии блокчейн и финтех приложениях</p>
             </li>
@@ -510,29 +599,30 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-content">
-        <a href="#" class="footer-content__contribute-button">Contribute</a>
+        <a href="//user.liqbo.com/" class="footer-content__contribute-button">Contribute</a>
         <div class="footer-content__courses">
           <span>Contributed so far:</span>
-          <span class="footer-content__course footer-content__course--btc">120</span>
+          <span class="footer-content__course footer-content__course--btc">0</span>
           <span class="footer-content__abbreviation">BTC <span>&mdash;</span></span>
-          <span class="footer-content__course footer-content__course--eth">500</span>
+          <span class="footer-content__course footer-content__course--eth">0</span>
           <span class="footer-content__abbreviation">ETH <span>&mdash;</span></span>
-          <span class="footer-content__course footer-content__course--liqbo">850</span>
+          <span class="footer-content__course footer-content__course--liqbo">0</span>
           <span class="footer-content__abbreviation">LiqBo</span>
         </div>
         <a href="#" class="footer-content__calculator-button">LiqBo Calculator</a>
+        <button class="footer-content__courses-button"></button>
       </div>
     </div>
   </footer>
   
   <div class="social-links">
     <ul>
-      <li><a href="#" class="social-link social-link--tw">Twitter</a></li>
-      <li><a href="#" class="social-link social-link--tg">Telegram</a></li>
-      <li><a href="#" class="social-link social-link--fb">Facebook</a></li>
-      <li><a href="#" class="social-link social-link--vk">Vkontakte</a></li>
-      <li><a href="#" class="social-link social-link--ok">Odnoklassniki</a></li>
-      <li><a href="#" class="social-link social-link--gp">Google+</a></li>
+      <li><a href="javascript:window.open('https://twitter.com/share?url='+encodeURIComponent(window.location.href),'sharer', 'toolbar=0,status=0,width=626,height=436')" class="social-link social-link--tw">Twitter</a></li>
+      <li><a href="javascript:window.open('https://t.me/share/url?url='+encodeURIComponent(window.location.href),'sharer', 'toolbar=0,status=0,width=626,height=436')" class="social-link social-link--tg">Telegram</a></li>
+      <li><a href="javascript:window.open('http://www.facebook.com/sharer.php?u='+encodeURIComponent(window.location.href)+'&t='+encodeURIComponent(document.title),'sharer', 'toolbar=0,status=0,width=626,height=436');" class="social-link social-link--fb">Facebook</a></li>
+      <li><a href="javascript:window.open('https://vk.com/share.php?url='+encodeURIComponent(window.location.href),'sharer', 'toolbar=0,status=0,width=626,height=436')" class="social-link social-link--vk">Vkontakte</a></li>
+      <li><a href="javascript:window.open('https://connect.ok.ru/offer?url=' + encodeURIComponent(window.location.href) + '&title=' + encodeURIComponent(document.title), 'sharer', 'toolbar=0,status=0,width=626,height=436')" class="social-link social-link--ok">Odnoklassniki</a></li>
+      <li><a href="javascript:window.open('https://plus.google.com/share?url=' + encodeURIComponent(window.location.href), 'sharer', 'toolbar=0,status=0,width=626,height=436')" class="social-link social-link--gp">Google+</a></li>
       <!-- <li><a href="#" class="social-link social-link--ig">Instagram</a></li>
       <li><a href="#" class="social-link social-link--yt">Youtube</a></li> -->
     </ul>
@@ -647,6 +737,44 @@
 
   <script type="text/javascript" src="scripts/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" src="scripts/jquery.formstyler.min.js"></script>
+  <script type="text/javascript" src="scripts/js.cookie.js"></script>
   <script type="text/javascript" src="scripts/main.js"></script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-108228417-1"></script>
+  <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-108228417-1');
+  </script>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript" >
+      (function (d, w, c) {
+          (w[c] = w[c] || []).push(function() {
+              try {
+                  w.yaCounter46308750 = new Ya.Metrika({
+                      id:46308750,
+                      clickmap:true,
+                      trackLinks:true,
+                      accurateTrackBounce:true
+                  });
+              } catch(e) { }
+          });
+
+          var n = d.getElementsByTagName("script")[0],
+              s = d.createElement("script"),
+              f = function () { n.parentNode.insertBefore(s, n); };
+          s.type = "text/javascript";
+          s.async = true;
+          s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+          if (w.opera == "[object Opera]") {
+              d.addEventListener("DOMContentLoaded", f, false);
+          } else { f(); }
+      })(document, window, "yandex_metrika_callbacks");
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/46308750" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  <!-- /Yandex.Metrika counter -->
 </body>
 </html>

@@ -89,108 +89,108 @@ $(".inline-link--offering").click(function() {
 
 (function () {
 
-  var headerBottom = document.querySelector(".header-bottom");
-  var personalButton = document.querySelector(".header-personal");
-  var selectLanguage = document.querySelector(".select-language");
+    var headerBottom = document.querySelector(".header-bottom");
+    var personalButton = document.querySelector(".header-personal");
+    var selectLanguage = document.querySelector(".select-language");
 
-  var pageContentHomeItem = document.querySelector(".main-menu__item--home");
-  var pageContentAboutItem = document.querySelector(".main-menu__item--about");
-  var pageContentTeamItem = document.querySelector(".main-menu__item--our-team");
-  var pageContentRoadmapItem = document.querySelector(".main-menu__item--roadmap");
-  var pageContentQAItem = document.querySelector(".main-menu__item--qa");
-  /*var pageContentRewardsItem = document.querySelector(".main-menu__item--rewards");*/
-  /*var pageContentNewsItem = document.querySelector(".main-menu__item--news");*/
-  var pageContentPressItem = document.querySelector(".main-menu__item--press");
+    var pageContentHomeItem = document.querySelector(".main-menu__item--home");
+    var pageContentAboutItem = document.querySelector(".main-menu__item--about");
+    var pageContentTeamItem = document.querySelector(".main-menu__item--our-team");
+    var pageContentRoadmapItem = document.querySelector(".main-menu__item--roadmap");
+    var pageContentQAItem = document.querySelector(".main-menu__item--qa");
+    /*var pageContentRewardsItem = document.querySelector(".main-menu__item--rewards");*/
+    /*var pageContentNewsItem = document.querySelector(".main-menu__item--news");*/
+    var pageContentPressItem = document.querySelector(".main-menu__item--press");
 
-  var pageHeader = document.querySelector(".header");
-  var pageContentHome = document.querySelector(".home");
-  var pageContentAbout = document.querySelector(".about");
-  var pageContentTeam = document.querySelector(".our-team");
-  var pageContentRoadmap = document.querySelector(".roadmap");
-  var pageContentQA = document.querySelector(".qa");
-  /*var pageContentRewards = document.querySelector(".rewards");*/
-  /*var pageContentNews = document.querySelector(".news");*/
-  var pageContentPress = document.querySelector(".press");
+    var pageHeader = document.querySelector(".header");
+    var pageContentHome = document.querySelector(".home");
+    var pageContentAbout = document.querySelector(".about");
+    var pageContentTeam = document.querySelector(".our-team");
+    var pageContentRoadmap = document.querySelector(".roadmap");
+    var pageContentQA = document.querySelector(".qa");
+    /*var pageContentRewards = document.querySelector(".rewards");*/
+    /*var pageContentNews = document.querySelector(".news");*/
+    var pageContentPress = document.querySelector(".press");
 
-  window.addEventListener("scroll", function(event) {
+    window.addEventListener("scroll", function(event) {
 
-    var pageHeaderCoordinates = pageHeader.getBoundingClientRect();
-    var pageContentHomeCoordinates = pageContentHome.getBoundingClientRect();
-    var pageContentAboutCoordinates = pageContentAbout.getBoundingClientRect();
-    var pageContentTeamCoordinates = pageContentTeam.getBoundingClientRect();
-    var pageContentRoadmapCoordinates = pageContentRoadmap.getBoundingClientRect();
-    var pageContentQACoordinates = pageContentQA.getBoundingClientRect();
-    /*var pageContentRewardsCoordinates = pageContentRewards.getBoundingClientRect();*/
-    /*var pageContentNewsCoordinates = pageContentNews.getBoundingClientRect();*/
-    var pageContentPressCoordinates = pageContentPress.getBoundingClientRect();
+      var pageHeaderCoordinates = pageHeader.getBoundingClientRect();
+      var pageContentHomeCoordinates = pageContentHome.getBoundingClientRect();
+      var pageContentAboutCoordinates = pageContentAbout.getBoundingClientRect();
+      var pageContentTeamCoordinates = pageContentTeam.getBoundingClientRect();
+      var pageContentRoadmapCoordinates = pageContentRoadmap.getBoundingClientRect();
+      var pageContentQACoordinates = pageContentQA.getBoundingClientRect();
+      /*var pageContentRewardsCoordinates = pageContentRewards.getBoundingClientRect();*/
+      /*var pageContentNewsCoordinates = pageContentNews.getBoundingClientRect();*/
+      var pageContentPressCoordinates = pageContentPress.getBoundingClientRect();
 
-    if (pageHeaderCoordinates.bottom < 10) {
-      headerBottom.classList.add("header-bottom--scroll");
-      personalButton.classList.add("header-personal--scroll");
-      selectLanguage.classList.add("select-language--scroll");
-    } else {
-      headerBottom.classList.remove("header-bottom--scroll");
-      personalButton.classList.remove("header-personal--scroll");
-      selectLanguage.classList.remove("select-language--scroll");
-    }
+      if (pageHeaderCoordinates.bottom < 10) {
+        headerBottom.classList.add("header-bottom--scroll");
+        personalButton.classList.add("header-personal--scroll");
+        selectLanguage.classList.add("select-language--scroll");
+      } else {
+        headerBottom.classList.remove("header-bottom--scroll");
+        personalButton.classList.remove("header-personal--scroll");
+        selectLanguage.classList.remove("select-language--scroll");
+      }
 
-    if ((pageContentHomeCoordinates.top < 10) 
-      && (pageContentHomeCoordinates.top > -pageContentHomeCoordinates.height)) {
-      pageContentHomeItem.classList.add("main-menu__item--active");
-    } else {
-      pageContentHomeItem.classList.remove("main-menu__item--active");
-    }
+      if ((pageContentHomeCoordinates.top < 10) 
+        && (pageContentHomeCoordinates.top > -pageContentHomeCoordinates.height)) {
+        pageContentHomeItem.classList.add("main-menu__item--active");
+      } else {
+        pageContentHomeItem.classList.remove("main-menu__item--active");
+      }
 
-    if ((pageContentAboutCoordinates.top < 10) 
-      && (pageContentAboutCoordinates.top > -pageContentAboutCoordinates.height)) {
-      pageContentAboutItem.classList.add("main-menu__item--active");
-    } else {
-      pageContentAboutItem.classList.remove("main-menu__item--active");
-    }
+      if ((pageContentAboutCoordinates.top < 10) 
+        && (pageContentAboutCoordinates.top > -pageContentAboutCoordinates.height)) {
+        pageContentAboutItem.classList.add("main-menu__item--active");
+      } else {
+        pageContentAboutItem.classList.remove("main-menu__item--active");
+      }
 
-    if ((pageContentTeamCoordinates.top < 10) 
-      && (pageContentTeamCoordinates.top > -pageContentTeamCoordinates.height)) {
-      pageContentTeamItem.classList.add("main-menu__item--active");
-    } else {
-      pageContentTeamItem.classList.remove("main-menu__item--active");
-    }
+      if ((pageContentTeamCoordinates.top < 10) 
+        && (pageContentTeamCoordinates.top > -pageContentTeamCoordinates.height)) {
+        pageContentTeamItem.classList.add("main-menu__item--active");
+      } else {
+        pageContentTeamItem.classList.remove("main-menu__item--active");
+      }
 
-    if ((pageContentRoadmapCoordinates.top < 10) 
-      && (pageContentRoadmapCoordinates.top > -pageContentRoadmapCoordinates.height)) {
-      pageContentRoadmapItem.classList.add("main-menu__item--active");
-    } else {
-      pageContentRoadmapItem.classList.remove("main-menu__item--active");
-    }
+      if ((pageContentRoadmapCoordinates.top < 10) 
+        && (pageContentRoadmapCoordinates.top > -pageContentRoadmapCoordinates.height)) {
+        pageContentRoadmapItem.classList.add("main-menu__item--active");
+      } else {
+        pageContentRoadmapItem.classList.remove("main-menu__item--active");
+      }
 
-    if ((pageContentQACoordinates.top < 10) 
-      && (pageContentQACoordinates.top > -pageContentQACoordinates.height)) {
-      pageContentQAItem.classList.add("main-menu__item--active");
-    } else {
-      pageContentQAItem.classList.remove("main-menu__item--active");
-    }
+      if ((pageContentQACoordinates.top < 10) 
+        && (pageContentQACoordinates.top > -pageContentQACoordinates.height)) {
+        pageContentQAItem.classList.add("main-menu__item--active");
+      } else {
+        pageContentQAItem.classList.remove("main-menu__item--active");
+      }
 
-    /*if ((pageContentRewardsCoordinates.top < 10) 
-      && (pageContentRewardsCoordinates.top > -pageContentRewardsCoordinates.height)) {
-      pageContentRewardsItem.classList.add("main-menu__item--active");
-    } else {
-      pageContentRewardsItem.classList.remove("main-menu__item--active");
-    }*/
+      /*if ((pageContentRewardsCoordinates.top < 10) 
+        && (pageContentRewardsCoordinates.top > -pageContentRewardsCoordinates.height)) {
+        pageContentRewardsItem.classList.add("main-menu__item--active");
+      } else {
+        pageContentRewardsItem.classList.remove("main-menu__item--active");
+      }*/
 
-    /*if ((pageContentNewsCoordinates.top < 10) 
-      && (pageContentNewsCoordinates.top > -pageContentNewsCoordinates.height)) {
-      pageContentNewsItem.classList.add("main-menu__item--active");
-    } else {
-      pageContentNewsItem.classList.remove("main-menu__item--active");
-    }*/
+      /*if ((pageContentNewsCoordinates.top < 10) 
+        && (pageContentNewsCoordinates.top > -pageContentNewsCoordinates.height)) {
+        pageContentNewsItem.classList.add("main-menu__item--active");
+      } else {
+        pageContentNewsItem.classList.remove("main-menu__item--active");
+      }*/
 
-    if ((pageContentPressCoordinates.top < 10) 
-      && (pageContentPressCoordinates.top > -pageContentPressCoordinates.height)) {
-      pageContentPressItem.classList.add("main-menu__item--active");
-    } else {
-      pageContentPressItem.classList.remove("main-menu__item--active");
-    }
+      if ((pageContentPressCoordinates.top < 10) 
+        && (pageContentPressCoordinates.top > -pageContentPressCoordinates.height)) {
+        pageContentPressItem.classList.add("main-menu__item--active");
+      } else {
+        pageContentPressItem.classList.remove("main-menu__item--active");
+      }
 
-  });
+    });
 
 }());
 
@@ -446,14 +446,22 @@ $(".header-top__stay-tuned a").click(function(e) {
   e.preventDefault();
   $(".header-top__subscribe-form").addClass("header-top__subscribe-form--visible");
   $(".header-top__stay-tuned").addClass("header-top__stay-tuned--hidden");
-  $(".header-personal").addClass("header-personal--hidden");
+
+  if ($(".container").css("width") == "1175px") {
+    $(".header-personal").addClass("header-personal--hidden");
+  }
+  
 });
 
 $(".subscribe-form__close-button").click(function(e) {
   e.preventDefault();
   $(".header-top__subscribe-form").removeClass("header-top__subscribe-form--visible");
   $(".header-top__stay-tuned").removeClass("header-top__stay-tuned--hidden");
-  $(".header-personal").removeClass("header-personal--hidden");
+
+  if ($(".container").css("width") == "1175px") {
+    $(".header-personal").removeClass("header-personal--hidden");
+  }
+  
 });
 
 
@@ -491,19 +499,196 @@ v3.onclick = function() {
 /* Change language */
 
 $(".select-language select").change(function() {
-  console.log($(this).val());
   if ($(this).val() == "Ru") {
     $(".select-language .jq-selectbox").addClass("jq-selectbox--ru");
     $(".select-language .jq-selectbox").removeClass("jq-selectbox--en");
     $(".select-language .jq-selectbox").removeClass("jq-selectbox--cn");
+    location.href='http://www.liqbo.ru/';
   } else if ($(this).val() == "Cn") {
     $(".select-language .jq-selectbox").removeClass("jq-selectbox--ru");
     $(".select-language .jq-selectbox").removeClass("jq-selectbox--en");
     $(".select-language .jq-selectbox").addClass("jq-selectbox--cn");
+    location.href='http://cn.liqbo.com/';
   } else {
     $(".select-language .jq-selectbox").removeClass("jq-selectbox--ru");
     $(".select-language .jq-selectbox").addClass("jq-selectbox--en");
     $(".select-language .jq-selectbox").removeClass("jq-selectbox--cn");
+      location.href='http://liqbo.com/';
   }
 });
 
+$().ready(function(){
+    var field = $('#email');
+    var form = $('#subscribe');
+    var block = $('.header-top__subscriber');
+    form.submit(function(){
+        var email = field.val();
+        if(email){
+            var data = new FormData();
+            data.append('email', email);
+            $.ajax({
+                url: '//user.liqbo.com/api/app/subscriber',
+                method: 'POST',
+                processData: false,
+                contentType: false,
+                crossDomain: true,
+                dataType: 'json',
+                data: data,
+                success: function(mess){
+                    alert('You have successfully subscribed.');
+                    Cookies.set('liqbo_mail', email);
+                    showSubscribe();
+                },
+                error: function(err){
+                    alert('Error! Contact the administrator.')
+                }
+            })
+        }
+        return false;
+    });
+
+    block.find('a').click(function(){
+          var email =  Cookies.get('liqbo_mail');
+          if(email){
+              var data = new FormData();
+              data.append('email', email);
+              $.ajax({
+                  url: '//user.liqbo.com/api/app/subscriber/refuse',
+                  method: 'POST',
+                  processData: false,
+                  contentType: false,
+                  crossDomain: true,
+                  dataType: 'json',
+                  data: data,
+                  success: function(mess){
+                      alert('You have successfully unsubscribed.');
+                      Cookies.remove('liqbo_mail');
+                      showSubscribe();
+                  },
+                  error: function(err){
+                      alert('Error! Contact the administrator.')
+                  }
+              })
+          }
+          return false;
+    });
+
+    function checkSubscribe(){
+        var mail = Cookies.get('liqbo_mail');
+        if(mail){
+            return mail;
+        }
+        return null;
+    }
+
+    function showSubscribe(){
+        var mail = checkSubscribe();
+        if(mail){
+            block.find('strong').text(mail);
+            $(".header-top__stay-tuned").addClass("header-top__stay-tuned--hidden");
+            $(".header-personal").addClass("header-personal--hidden");
+            $(".header-top__subscribe-form").removeClass("header-top__subscribe-form--visible");
+            block.show();
+        }
+        else{
+            block.find('strong').text('');
+            $(".header-top__stay-tuned").removeClass("header-top__stay-tuned--hidden");
+            $(".header-personal").removeClass("header-personal--hidden");
+            $(".header-top__subscribe-form").removeClass("header-top__subscribe-form--visible");
+            block.hide();
+        }
+    }
+
+    showSubscribe();
+});
+
+
+/* Mobile menu button */
+
+$(".header-top__menu-button").click(function() {
+  $(".header-top__wrapper").addClass("header-top__wrapper--open");
+  $(".header-bottom").show();
+  $(".social-links").show();
+
+  if ($(".container").css("width") == "768px") {
+    $(".main-content").css("paddingTop", "848px");
+  }
+  
+});
+
+$(".header-bottom__close-button").click(function() {
+  $(".header-top__wrapper").removeClass("header-top__wrapper--open");
+  $(".header-bottom").hide();
+  $(".social-links").hide();
+
+  if ($(".container").css("width") == "768px") {
+    $(".main-content").css("paddingTop", 0);
+  }
+  
+});
+
+
+/* Mobile footer */
+
+$(window).resize(function() {
+  if ($(".container").css("width") <= "768px") {
+    $(".footer-content__calculator-button").text("Calculator");
+  } else {
+    $(".footer-content__calculator-button").text("Liqbo Calculator");
+  }
+});
+
+$(document).ready(function() {
+  if ($(".container").css("width") <= "768px") {
+    $(".footer-content__calculator-button").text("Calculator");
+  } else {
+    $(".footer-content__calculator-button").text("Liqbo Calculator");
+  }
+});
+
+
+/* Mobile timer */
+
+$(".header-top__timer-button").click(function() {
+  if ($(this).hasClass("header-top__timer-button--open")) {
+    $(this).removeClass("header-top__timer-button--open");
+    $(".header-top").removeClass("header-top--open");
+    $(".header-top__timer").removeClass("header-top__timer--open");
+    $(".header-top__timer ul").hide();
+  } else {
+    $(this).addClass("header-top__timer-button--open");
+    $(".header-top").addClass("header-top--open");
+    $(".header-top__timer").addClass("header-top__timer--open");
+    $(".header-top__timer ul").show();
+  }
+});
+
+
+/* Mobile courses */
+
+$(".footer-content__courses-button").click(function() {
+  if ($(this).hasClass("footer-content__courses-button--open")) {
+    $(this).removeClass("footer-content__courses-button--open");
+    $(".footer-content").removeClass("footer-content--open");
+  } else {
+    $(this).addClass("footer-content__courses-button--open");
+    $(".footer-content").addClass("footer-content--open");
+  }
+});
+
+
+/* Resize page */
+
+$(window).resize(function() {
+  if (($(".container").css("width") == "768px") || ($(".container").css("width") == "1175px")) {
+    $(".header-top__timer ul").show();
+  } else {
+    $(".header-top__timer ul").hide();
+  }
+
+  if ($(".container").css("width") == "1175px") {
+    $(".header-bottom").show();
+  } else {
+    $(".header-bottom").hide();
+  }
+});
